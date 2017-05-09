@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  Yesterday
+//
+//  Created by guiping on 2017/5/9.
+//  Copyright © 2017年 pingui. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifndef W_H_
+#define W_H_
+#define WIDTH  [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+#endif
+
+#define UICOLOR_RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+#define THEME_COLOR UICOLOR_RGBA(250, 126, 20, 1.0);
+
+#endif /* PrefixHeader_pch */

@@ -18,7 +18,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
     
     UILabel *label = [[UILabel alloc]init];
     label.frame = CGRectMake(20, 100, WIDTH - 20 * 2, 40);

@@ -25,10 +25,8 @@ static NSString *identifier = @"ListTableViewCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.navigationController.navigationBar.barTintColor = THEME_COLOR;
     // Do any additional setup after loading the view, typically from a nib.
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont boldSystemFontOfSize:18]};
+    
     self.title = @"目 录";
     
     [self loadData];
@@ -49,13 +47,16 @@ static NSString *identifier = @"ListTableViewCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
     ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     cell.lbTitle.text = titleArray[indexPath.row];
     cell.lbDescribe.text = describeArray[indexPath.row];
-    cell.lbNumber.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
-    return cell;
     
+    if (indexPath.row < 9) {
+        cell.lbNumber.text = [NSString stringWithFormat:@"0%ld",indexPath.row + 1];
+    }else {
+        cell.lbNumber.text = [NSString stringWithFormat:@"%ld",indexPath.row + 1];
+    }
+    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -76,6 +77,7 @@ static NSString *identifier = @"ListTableViewCell";
                   @"帧动画",
                   @"taleView单元格向下展开",
                   @"贝塞尔曲线",
+                  @"博客",
                   nil];
     
     describeArray = [NSArray arrayWithObjects:
@@ -86,6 +88,7 @@ static NSString *identifier = @"ListTableViewCell";
                      @"帧动画",
                      @"单元格展开收起",
                      @"绘制直线、圆、曲线。。。",
+                     @"大牛们写的博客",
                      nil];
     
     classArray = [NSArray arrayWithObjects:
@@ -96,16 +99,19 @@ static NSString *identifier = @"ListTableViewCell";
                   @"FrameViewController",
                   @"TableViewController",
                   @"BezierPathViewController",
+                  @"BlogTableViewController",
                   nil];
     
     [self.myTableView reloadData];
 }
 
+#pragma mark --------------- 懒加载 ----------------
 -(UITableView *)myTableView{
     if (!_myTableView) {
-        _myTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 375, 667-64)];
+        _myTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
         _myTableView.dataSource = self;
         _myTableView.delegate = self;
+        _myTableView.tableFooterView = [[UIView alloc] init];
         [self.view addSubview:_myTableView];
         [_myTableView registerClass:[ListTableViewCell class] forCellReuseIdentifier:identifier];
     }

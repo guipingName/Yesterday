@@ -36,6 +36,7 @@
             _lbNumber = [[UILabel alloc] init];
             [self.contentView addSubview:_lbNumber];
             _lbNumber.textColor = [UIColor whiteColor];
+            _lbNumber.font = [UIFont systemFontOfSize:14];
             _lbNumber.backgroundColor = THEME_COLOR;
             _lbNumber.textAlignment = NSTextAlignmentCenter;
             _lbNumber.layer.masksToBounds = YES;

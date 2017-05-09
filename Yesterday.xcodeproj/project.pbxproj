@@ -47,6 +47,9 @@
 		3833DF5D1EC1B2F40099E9B4 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3833DF381EC1B2F40099E9B4 /* MyTableViewCell.xib */; };
 		3833DF5E1EC1B2F40099E9B4 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3833DF3A1EC1B2F40099E9B4 /* TableViewController.m */; };
 		3833DF5F1EC1B2F40099E9B4 /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3833DF3C1EC1B2F40099E9B4 /* UIView+Snapshot.m */; };
+		3833DF631EC1BC640099E9B4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3833DF621EC1BC640099E9B4 /* BaseViewController.m */; };
+		3833DF671EC1C07D0099E9B4 /* BlogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3833DF661EC1C07D0099E9B4 /* BlogTableViewController.m */; };
+		384303B51EC1C7F400B2C9CD /* BlogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384303B41EC1C7F400B2C9CD /* BlogDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +113,12 @@
 		3833DF3B1EC1B2F40099E9B4 /* UIView+Snapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Snapshot.h"; sourceTree = "<group>"; };
 		3833DF3C1EC1B2F40099E9B4 /* UIView+Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Snapshot.m"; sourceTree = "<group>"; };
 		3833DF601EC1B3270099E9B4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3833DF611EC1BC640099E9B4 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		3833DF621EC1BC640099E9B4 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		3833DF651EC1C07D0099E9B4 /* BlogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogTableViewController.h; sourceTree = "<group>"; };
+		3833DF661EC1C07D0099E9B4 /* BlogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogTableViewController.m; sourceTree = "<group>"; };
+		384303B31EC1C7F300B2C9CD /* BlogDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogDetailViewController.h; sourceTree = "<group>"; };
+		384303B41EC1C7F400B2C9CD /* BlogDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +172,7 @@
 		3833DEF71EC1B2880099E9B4 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				3833DF641EC1C04C0099E9B4 /* 博客 */,
 				3833DF021EC1B2F40099E9B4 /* 贝塞尔曲线 */,
 				3833DF051EC1B2F40099E9B4 /* 冲击波动画 */,
 				3833DF0A1EC1B2F40099E9B4 /* 核心动画测试 */,
@@ -183,6 +193,8 @@
 				3833DEFE1EC1B2880099E9B4 /* ViewController.m */,
 				3833DEFB1EC1B2880099E9B4 /* ListTableViewCell.h */,
 				3833DEFC1EC1B2880099E9B4 /* ListTableViewCell.m */,
+				3833DF611EC1BC640099E9B4 /* BaseViewController.h */,
+				3833DF621EC1BC640099E9B4 /* BaseViewController.m */,
 				3833DF601EC1B3270099E9B4 /* PrefixHeader.pch */,
 			);
 			path = Main;
@@ -309,6 +321,17 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		3833DF641EC1C04C0099E9B4 /* 博客 */ = {
+			isa = PBXGroup;
+			children = (
+				3833DF651EC1C07D0099E9B4 /* BlogTableViewController.h */,
+				3833DF661EC1C07D0099E9B4 /* BlogTableViewController.m */,
+				384303B31EC1C7F300B2C9CD /* BlogDetailViewController.h */,
+				384303B41EC1C7F400B2C9CD /* BlogDetailViewController.m */,
+			);
+			path = "博客";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -399,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3833DF631EC1BC640099E9B4 /* BaseViewController.m in Sources */,
 				3833DF3E1EC1B2F40099E9B4 /* PulsingHaloLayer.m in Sources */,
 				3833DF411EC1B2F40099E9B4 /* CoreAnimationController.m in Sources */,
 				3833DF5E1EC1B2F40099E9B4 /* TableViewController.m in Sources */,
@@ -413,9 +437,11 @@
 				3833DF011EC1B2880099E9B4 /* ViewController.m in Sources */,
 				3833DF5F1EC1B2F40099E9B4 /* UIView+Snapshot.m in Sources */,
 				3833DF461EC1B2F40099E9B4 /* WaveProgressView.m in Sources */,
+				3833DF671EC1C07D0099E9B4 /* BlogTableViewController.m in Sources */,
 				3833DF471EC1B2F40099E9B4 /* FrameViewController.m in Sources */,
 				3833DF421EC1B2F40099E9B4 /* AViewController.m in Sources */,
 				3833DF3F1EC1B2F40099E9B4 /* ShockWaveController.m in Sources */,
+				384303B51EC1C7F400B2C9CD /* BlogDetailViewController.m in Sources */,
 				3833DEE21EC1B2600099E9B4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

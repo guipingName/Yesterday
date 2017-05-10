@@ -77,6 +77,7 @@ static NSString *identifier = @"ListTableViewCell";
                   @"帧动画",
                   @"taleView单元格向下展开",
                   @"贝塞尔曲线",
+                  @"Quartz2D",
                   @"博客",
                   nil];
     
@@ -88,6 +89,7 @@ static NSString *identifier = @"ListTableViewCell";
                      @"帧动画",
                      @"单元格展开收起",
                      @"绘制直线、圆、曲线。。。",
+                     @"Quartz绘制直线、圆、矩形",
                      @"大牛们写的博客",
                      nil];
     
@@ -99,6 +101,7 @@ static NSString *identifier = @"ListTableViewCell";
                   @"FrameViewController",
                   @"TableViewController",
                   @"BezierPathViewController",
+                  @"Quartz2DViewController",
                   @"BlogTableViewController",
                   nil];
     

@@ -21,12 +21,14 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor=[UIColor whiteColor];
     
+    // 第一个
     WaveProgressView *progressView = [[WaveProgressView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     progressView.center=CGPointMake(CGRectGetMidX(self.view.bounds), 150);
     progressView.progress = 0.3;
     progressView.speed = 0.5;
     [self.view addSubview:progressView];
     
+    // 第二个
     WaveProgressView *progressView1 = [[WaveProgressView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     progressView1.center=CGPointMake(CGRectGetMidX(self.view.bounds), 270);
     progressView1.progress = 0.5;
@@ -36,6 +38,7 @@
     progressView1.firstWaveColor = [UIColor colorWithRed:134/255.0 green:116/255.0 blue:210/255.0 alpha:1];
     [self.view addSubview:progressView1];
     
+    // 第三个
     WaveProgressView *progressView2 = [[WaveProgressView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     progressView2.center=CGPointMake(CGRectGetMidX(self.view.bounds), 390);
     progressView2.progress = 0.7;

@@ -49,6 +49,9 @@
 		3833DF5F1EC1B2F40099E9B4 /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3833DF3C1EC1B2F40099E9B4 /* UIView+Snapshot.m */; };
 		3833DF631EC1BC640099E9B4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3833DF621EC1BC640099E9B4 /* BaseViewController.m */; };
 		3833DF671EC1C07D0099E9B4 /* BlogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3833DF661EC1C07D0099E9B4 /* BlogTableViewController.m */; };
+		38371A5D1EC2DF82005A6BE6 /* Quartz2DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38371A5C1EC2DF82005A6BE6 /* Quartz2DViewController.m */; };
+		38371A631EC2DFEC005A6BE6 /* QuartzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38371A621EC2DFEC005A6BE6 /* QuartzView.m */; };
+		38371A651EC2F0C5005A6BE6 /* 联动_成员列表_女3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38371A641EC2F0C5005A6BE6 /* 联动_成员列表_女3@3x.png */; };
 		384303B51EC1C7F400B2C9CD /* BlogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384303B41EC1C7F400B2C9CD /* BlogDetailViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +120,11 @@
 		3833DF621EC1BC640099E9B4 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		3833DF651EC1C07D0099E9B4 /* BlogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogTableViewController.h; sourceTree = "<group>"; };
 		3833DF661EC1C07D0099E9B4 /* BlogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogTableViewController.m; sourceTree = "<group>"; };
+		38371A5B1EC2DF82005A6BE6 /* Quartz2DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quartz2DViewController.h; sourceTree = "<group>"; };
+		38371A5C1EC2DF82005A6BE6 /* Quartz2DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quartz2DViewController.m; sourceTree = "<group>"; };
+		38371A611EC2DFEC005A6BE6 /* QuartzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzView.h; sourceTree = "<group>"; };
+		38371A621EC2DFEC005A6BE6 /* QuartzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzView.m; sourceTree = "<group>"; };
+		38371A641EC2F0C5005A6BE6 /* 联动_成员列表_女3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "联动_成员列表_女3@3x.png"; sourceTree = "<group>"; };
 		384303B31EC1C7F300B2C9CD /* BlogDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogDetailViewController.h; sourceTree = "<group>"; };
 		384303B41EC1C7F400B2C9CD /* BlogDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +180,7 @@
 		3833DEF71EC1B2880099E9B4 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				38371A5A1EC2DF3D005A6BE6 /* Quartz2D */,
 				3833DF641EC1C04C0099E9B4 /* 博客 */,
 				3833DF021EC1B2F40099E9B4 /* 贝塞尔曲线 */,
 				3833DF051EC1B2F40099E9B4 /* 冲击波动画 */,
@@ -332,6 +341,18 @@
 			path = "博客";
 			sourceTree = "<group>";
 		};
+		38371A5A1EC2DF3D005A6BE6 /* Quartz2D */ = {
+			isa = PBXGroup;
+			children = (
+				38371A641EC2F0C5005A6BE6 /* 联动_成员列表_女3@3x.png */,
+				38371A5B1EC2DF82005A6BE6 /* Quartz2DViewController.h */,
+				38371A5C1EC2DF82005A6BE6 /* Quartz2DViewController.m */,
+				38371A611EC2DFEC005A6BE6 /* QuartzView.h */,
+				38371A621EC2DFEC005A6BE6 /* QuartzView.m */,
+			);
+			path = Quartz2D;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -408,6 +429,7 @@
 				3833DF571EC1B2F40099E9B4 /* p03_img_qp2_n_01@3x.png in Resources */,
 				3833DF5A1EC1B2F40099E9B4 /* background.png in Resources */,
 				3833DF4E1EC1B2F40099E9B4 /* p03_icon_camera4_n_01@2x.png in Resources */,
+				38371A651EC2F0C5005A6BE6 /* 联动_成员列表_女3@3x.png in Resources */,
 				3833DF561EC1B2F40099E9B4 /* p03_img_qp2_n_01@2x.png in Resources */,
 				3833DF501EC1B2F40099E9B4 /* p03_icon_camera5_n_01@2x.png in Resources */,
 				3833DF5D1EC1B2F40099E9B4 /* MyTableViewCell.xib in Resources */,
@@ -441,6 +463,8 @@
 				3833DF471EC1B2F40099E9B4 /* FrameViewController.m in Sources */,
 				3833DF421EC1B2F40099E9B4 /* AViewController.m in Sources */,
 				3833DF3F1EC1B2F40099E9B4 /* ShockWaveController.m in Sources */,
+				38371A631EC2DFEC005A6BE6 /* QuartzView.m in Sources */,
+				38371A5D1EC2DF82005A6BE6 /* Quartz2DViewController.m in Sources */,
 				384303B51EC1C7F400B2C9CD /* BlogDetailViewController.m in Sources */,
 				3833DEE21EC1B2600099E9B4 /* main.m in Sources */,
 			);

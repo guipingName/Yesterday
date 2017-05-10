@@ -32,7 +32,7 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     progressView = [[UIProgressView alloc]initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.frame), 1)];
-    [progressView setValue:[UIColor greenColor] forKey:@"progressTintColor"];
+    [progressView setValue:[UIColor redColor] forKey:@"progressTintColor"];
     [progressView setValue:[UIColor whiteColor] forKey:@"trackTintColor"];
     [self.view addSubview:progressView];
     

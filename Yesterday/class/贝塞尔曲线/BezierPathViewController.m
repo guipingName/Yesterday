@@ -28,33 +28,39 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     
-    // 1.画两个圆
+    // 直线
+    [self aline];
+    
+    // 画两个圆
     [self createBezierPath:CGRectMake(0, 0, 100, 100)];
     
-    // 2.画一个转动的圆
+    // 画一个转动的圆
     [self circleBezierPath];
     //用定时器模拟数值输入的情况
     timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(circleAnimationTypeOne) userInfo:nil repeats:YES];
     
-    // 3.二次贝塞尔曲线
+    // 二次贝塞尔曲线
     [self createCurvedLine];
     
-    // 4.圆角矩形
+    // 圆角矩形
     [self RoundedRect];
     
-    [self aline];
+    // 正弦曲线
+    [self sinCurve];
+    
 }
 
 #pragma mark --------------- 直线 ----------------
 - (void) aline{
     UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(30, 70)];
-    [path addLineToPoint:CGPointMake(WIDTH - 60, 80)];
+    [path moveToPoint:CGPointMake(30, 100)];
+    [path addLineToPoint:CGPointMake(WIDTH - 60, 120)];
     
     CAShapeLayer *layer=[CAShapeLayer layer];
     layer.path=path.CGPath;
     //layer.frame = CGRectMake(0, 0, 100, 100);
     [self.view.layer addSublayer:layer];
+    layer.fillColor = nil;
     layer.strokeColor=[UIColor greenColor].CGColor;
     layer.lineWidth = 3;
 }
@@ -68,8 +74,8 @@
 #pragma mark --------------- 二次贝塞尔曲线 ----------------
 -(void)createCurvedLine{
     UIBezierPath* aPath = [UIBezierPath bezierPath];
-    [aPath moveToPoint:CGPointMake(20, 270)];
-    [aPath addQuadCurveToPoint:CGPointMake(200, 270) controlPoint:CGPointMake(30, 100)];
+    [aPath moveToPoint:CGPointMake(20, HEIGHT / 2 + 35)];
+    [aPath addQuadCurveToPoint:CGPointMake(200, HEIGHT / 2 + 35) controlPoint:CGPointMake(30, 200)];
     
     CAShapeLayer *curvedLineLayer=[CAShapeLayer layer];
     curvedLineLayer.path=aPath.CGPath;
@@ -91,7 +97,7 @@
 
 #pragma mark --------------- 圆角矩形 ----------------
 - (void) RoundedRect{
-    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(WIDTH * 3 / 4 - 60, 200, 120, 70) byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(20, 20)];
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(WIDTH * 3 / 4 - 60, HEIGHT / 2 - 35, 120, 70) byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(20, 20)];
     CAShapeLayer *curvedLineLayer=[CAShapeLayer layer];
     curvedLineLayer.path=path.CGPath;
     //curvedLineLayer.frame = CGRectMake(0, 0, 100, 100);
@@ -104,7 +110,7 @@
 #pragma mark --------------- 画一个转动的圆 ----------------
 -(void)circleBezierPath{
     //创建出圆形贝塞尔曲线
-    UIBezierPath *circlePath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(WIDTH * 3 / 4 - 40, 85, 80, 80)];
+    UIBezierPath *circlePath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(WIDTH * 3 / 4 - 40, HEIGHT / 2 - 160, 80, 80)];
     
     shapeLayer = [CAShapeLayer layer];
     //shapeLayer.frame = CGRectMake(0, 0, 80, 80);
@@ -140,17 +146,72 @@
     }
 }
 
+#pragma mark ------------ 正弦曲线 -------------------
+- (void) sinCurve{
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path moveToPoint:CGPointMake(10, HEIGHT * 3 / 4 - 20)];
+    // 正弦函数 y = Asin(ωx + φ)
+    
+    CGFloat waveHeight = 30;
+    CGFloat T = 30;
+    CGFloat ω = M_PI * 2 / T;
+    for (int x=10; x<WIDTH - 10; x++) {
+        CGFloat y = waveHeight * sin(ω * (x - 10) + M_PI) + HEIGHT * 3 / 4 - 20;
+        [path addLineToPoint:CGPointMake(x, y)];
+    }
+    
+    CAShapeLayer *layer=[CAShapeLayer layer];
+    layer.path=path.CGPath;
+    //layer.frame = CGRectMake(0, 0, 100, 100);
+    [self.view.layer addSublayer:layer];
+    layer.fillColor = nil;
+    layer.strokeColor=[UIColor redColor].CGColor;
+    layer.lineWidth = 2;
+    
+    
+    // 封闭+填充色
+    UIBezierPath *path1 = [UIBezierPath bezierPath];
+    [path1 moveToPoint:CGPointMake(0, HEIGHT - 80)];
+    
+    CGFloat waveHeight1 = 15;
+    CGFloat T1 = 50;
+    for (int x=0; x<WIDTH; x++) {
+        if (x > 100 && x < 200) {
+            T1 = 100;
+            waveHeight1 = 28;
+        }
+        else{
+            T1 = 50;
+            waveHeight1 = 15;
+        }
+        CGFloat y = waveHeight1 * sin(M_PI * 2 / T1 * x + M_PI) + HEIGHT - 80;
+        [path1 addLineToPoint:CGPointMake(x, y)];
+    }
+    
+    [path1 addLineToPoint:CGPointMake(WIDTH, HEIGHT)];
+    [path1 addLineToPoint:CGPointMake(0, HEIGHT)];
+    [path1 closePath];
+    
+    
+    CAShapeLayer *layer1 =[CAShapeLayer layer];
+    layer1.path=path1.CGPath;
+    //layer.frame = CGRectMake(0, 0, 100, 100);
+    [self.view.layer addSublayer:layer1];
+    layer1.fillColor = [UIColor orangeColor].CGColor;
+    layer1.strokeColor=[UIColor redColor].CGColor;
+    layer1.lineWidth = 2;
+}
 
 #pragma mark --------------- 圆 ----------------
 -(void)createBezierPath:(CGRect)mybound{
     
-    // 考虑到线条的粗细
+    // 线条有粗细
     // 圆心到外边缘的距离 = 半径 + 线条粗细 / 2
     // 圆心到内边缘的距离 = 半径 - 线条粗细 / 2
     // 如果画同心圆使外边缘或内边缘对齐可适当调整半径
     
     //外圆
-    UIBezierPath *_trackPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(WIDTH / 4, 120) radius:40 + 1 startAngle:0 endAngle:M_PI * 2 clockwise:YES];;
+    UIBezierPath *_trackPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(WIDTH / 4, HEIGHT / 2 - 120) radius:40 + 1 startAngle:0 endAngle:M_PI * 2 clockwise:YES];;
     
     CAShapeLayer *_trackLayer = [CAShapeLayer new];
     _trackLayer.frame = mybound;
@@ -161,7 +222,7 @@
     _trackLayer.lineWidth = 4;
     
     //内圆(方法一) 不完整的圆
-//    UIBezierPath *_progressPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(WIDTH / 4, 120) radius:40 startAngle:- M_PI_2 endAngle:(M_PI * 2) * 0.7 - M_PI_2 clockwise:YES];
+//    UIBezierPath *_progressPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(WIDTH / 4, HEIGHT / 2 - 120) radius:40 startAngle:- M_PI_2 endAngle:(M_PI * 2) * 0.7 - M_PI_2 clockwise:YES];
 //    
 //    CAShapeLayer *_progressLayer = [CAShapeLayer new];
 //    [self.view.layer addSublayer:_progressLayer];
@@ -174,7 +235,7 @@
     
     // 不完整的圆 方法二
     // 先画一个完整的圆 然后改变strokeStart 和 strokeEnd属性
-    UIBezierPath *_progressPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(WIDTH / 4, 120) radius:40 startAngle:- M_PI_2 endAngle:M_PI * 1.5  clockwise:YES];
+    UIBezierPath *_progressPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(WIDTH / 4, HEIGHT / 2 - 120) radius:40 startAngle:- M_PI_2 endAngle:M_PI * 1.5  clockwise:YES];
     
     CAShapeLayer *_progressLayer = [CAShapeLayer new];
     _progressLayer.frame = mybound;

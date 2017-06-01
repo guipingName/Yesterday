@@ -40,12 +40,12 @@
     // x,y为圆点坐标，radius半径，startAngle为开始的弧度，endAngle为 结束的弧度，clockwise 0为顺时针，1为逆时针。
     CGContextAddArc(context, 100, 20, 15, 0, 2*M_PI, 0); //添加一个圆
     CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
-    CGContextDrawPath(context, kCGPathStroke); //绘制路径
+    CGContextDrawPath(context, kCGPathStroke);
     
     //填充圆，无边框
     CGContextAddArc(context, 150, 30, 30, 0, 2*M_PI, 0); //添加一个圆
     CGContextSetFillColorWithColor(context, [UIColor blueColor].CGColor);
-    CGContextDrawPath(context, kCGPathFill);//绘制填充
+    CGContextDrawPath(context, kCGPathFill);
     
     //圆 填充
     UIColor*aColor = [UIColor orangeColor];
@@ -63,7 +63,7 @@
     //CGContextAddLines(CGContextRef c, const CGPoint points[],size_t count)
     //points[]坐标数组，和count大小
     CGContextAddLines(context, aPoints, 2);//添加线
-    CGContextDrawPath(context, kCGPathStroke); //根据坐标绘制路径
+    CGContextDrawPath(context, kCGPathStroke);
     
     //笑脸
     //左
@@ -72,21 +72,21 @@
     //CGContextAddArcToPoint(CGContextRef c, CGFloat x1, CGFloat y1,CGFloat x2, CGFloat y2, CGFloat radius)
     //x1,y1跟p1形成一条线的坐标p2，x2,y2结束坐标跟p3形成一条线的p3,radius半径,注意, 需要算好半径的长度,
     CGContextAddArcToPoint(context, 148, 68, 156, 80, 10);
-    CGContextStrokePath(context);//绘画路径
+    CGContextStrokePath(context);
     
     //右
     CGContextMoveToPoint(context, 160, 80);//开始坐标p1
     //CGContextAddArcToPoint(CGContextRef c, CGFloat x1, CGFloat y1,CGFloat x2, CGFloat y2, CGFloat radius)
     //x1,y1跟p1形成一条线的坐标p2，x2,y2结束坐标跟p3形成一条线的p3,radius半径,注意, 需要算好半径的长度,
     CGContextAddArcToPoint(context, 168, 68, 176, 80, 10);
-    CGContextStrokePath(context);//绘画路径
+    CGContextStrokePath(context);
     
     //右
     CGContextMoveToPoint(context, 150, 90);//开始坐标p1
     //CGContextAddArcToPoint(CGContextRef c, CGFloat x1, CGFloat y1,CGFloat x2, CGFloat y2, CGFloat radius)
     //x1,y1跟p1形成一条线的坐标p2，x2,y2结束坐标跟p3形成一条线的p3,radius半径,注意, 需要算好半径的长度,
     CGContextAddArcToPoint(context, 158, 102, 166, 90, 10);
-    CGContextStrokePath(context);//绘画路径
+    CGContextStrokePath(context);
     //注，如果还是没弄明白怎么回事，请参考：http://donbe.blog.163.com/blog/static/138048021201052093633776/
     
     #pragma mark --------------- 画矩形 ----------------
@@ -94,12 +94,12 @@
     CGContextFillRect(context,CGRectMake(120, 120, 10, 10));//填充框
     //矩形，并填弃颜色
     CGContextSetLineWidth(context, 2.0);//线的宽度
-    aColor = [UIColor blueColor];//blue蓝色
-    CGContextSetFillColorWithColor(context, aColor.CGColor);//填充颜色
+    aColor = [UIColor blueColor];
+    CGContextSetFillColorWithColor(context, aColor.CGColor);
     aColor = [UIColor yellowColor];
     CGContextSetStrokeColorWithColor(context, aColor.CGColor);//线框颜色
     CGContextAddRect(context,CGRectMake(140, 120, 60, 30));//画方框
-    CGContextDrawPath(context, kCGPathFillStroke);//绘画路径
+    CGContextDrawPath(context, kCGPathFillStroke);
     
     //矩形，并填弃渐变颜色
     //关于颜色参考http://blog.sina.com.cn/s/blog_6ec3c9ce01015v3c.html
@@ -170,12 +170,12 @@
     #pragma mark --------------- 扇形和椭圆 ----------------
     //画扇形，也就画圆，只不过是设置角度的大小，形成一个扇形
     aColor = [UIColor colorWithRed:0 green:1 blue:1 alpha:1];
-    CGContextSetFillColorWithColor(context, aColor.CGColor);//填充颜色
+    CGContextSetFillColorWithColor(context, aColor.CGColor);
     //圆心:(160,200), 半径:30
     CGContextMoveToPoint(context, 160, 200);
     CGContextAddArc(context, 160, 200, 30,  -60 * M_PI / 180, -120 * M_PI / 180, 1);
     CGContextClosePath(context);
-    CGContextDrawPath(context, kCGPathFillStroke); //绘制路径
+    CGContextDrawPath(context, kCGPathFillStroke);
     
     //画椭圆
     CGContextAddEllipseInRect(context, CGRectMake(200, 180, 50, 20)); //椭圆
@@ -184,12 +184,12 @@
     #pragma mark --------------- 三角形 ----------------
     // 同直线  只需要3个点
     CGPoint sPoints[3];//坐标点
-    sPoints[0] =CGPointMake(100, 220);//坐标1
-    sPoints[1] =CGPointMake(130, 220);//坐标2
-    sPoints[2] =CGPointMake(130, 160);//坐标3
+    sPoints[0] =CGPointMake(100, 220);
+    sPoints[1] =CGPointMake(130, 220);
+    sPoints[2] =CGPointMake(130, 160);
     CGContextAddLines(context, sPoints, 3);//添加线
-    CGContextClosePath(context);//封起来
-    CGContextDrawPath(context, kCGPathFillStroke); //根据坐标绘制路径
+    CGContextClosePath(context);
+    CGContextDrawPath(context, kCGPathFillStroke);
     
     #pragma mark --------------- 圆角矩形 ----------------
     float fw = 180;

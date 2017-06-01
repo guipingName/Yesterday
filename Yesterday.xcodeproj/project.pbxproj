@@ -53,6 +53,47 @@
 		38371A631EC2DFEC005A6BE6 /* QuartzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38371A621EC2DFEC005A6BE6 /* QuartzView.m */; };
 		38371A651EC2F0C5005A6BE6 /* 联动_成员列表_女3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38371A641EC2F0C5005A6BE6 /* 联动_成员列表_女3@3x.png */; };
 		384303B51EC1C7F400B2C9CD /* BlogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384303B41EC1C7F400B2C9CD /* BlogDetailViewController.m */; };
+		3843FA051EC3FD7500435D75 /* likonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3843FA041EC3FD7500435D75 /* likonViewController.m */; };
+		3843FA6B1EC40A8000435D75 /* i8_定时@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA431EC40A8000435D75 /* i8_定时@2x.png */; };
+		3843FA6C1EC40A8000435D75 /* i8_定时@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA441EC40A8000435D75 /* i8_定时@3x.png */; };
+		3843FA6D1EC40A8000435D75 /* i8_定时关@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA451EC40A8000435D75 /* i8_定时关@3x.png */; };
+		3843FA6E1EC40A8000435D75 /* i8_定时开@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA461EC40A8000435D75 /* i8_定时开@3x.png */; };
+		3843FA6F1EC40A8000435D75 /* i8_开关@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA471EC40A8000435D75 /* i8_开关@2x.png */; };
+		3843FA701EC40A8000435D75 /* i8_开关@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA481EC40A8000435D75 /* i8_开关@3x.png */; };
+		3843FA711EC40A8000435D75 /* i8_开关关@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA491EC40A8000435D75 /* i8_开关关@3x.png */; };
+		3843FA721EC40A8000435D75 /* i8_摆头@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA4A1EC40A8000435D75 /* i8_摆头@2x.png */; };
+		3843FA731EC40A8000435D75 /* i8_摆头@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA4B1EC40A8000435D75 /* i8_摆头@3x.png */; };
+		3843FA741EC40A8000435D75 /* i8_摆头关2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA4C1EC40A8000435D75 /* i8_摆头关2x.png */; };
+		3843FA751EC40A8000435D75 /* i8_摆头关@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA4D1EC40A8000435D75 /* i8_摆头关@3x.png */; };
+		3843FA761EC40A8000435D75 /* i8_风速@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA4E1EC40A8000435D75 /* i8_风速@2x.png */; };
+		3843FA771EC40A8000435D75 /* i8_风速@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA4F1EC40A8000435D75 /* i8_风速@3x.png */; };
+		3843FA781EC40A8000435D75 /* i8_风速中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA501EC40A8000435D75 /* i8_风速中@2x.png */; };
+		3843FA791EC40A8000435D75 /* i8_风速中@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA511EC40A8000435D75 /* i8_风速中@3x.png */; };
+		3843FA7A1EC40A8000435D75 /* i8_风速低@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA521EC40A8000435D75 /* i8_风速低@2x.png */; };
+		3843FA7B1EC40A8000435D75 /* i8_风速低@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA531EC40A8000435D75 /* i8_风速低@3x.png */; };
+		3843FA7C1EC40A8000435D75 /* i8_风速关@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA541EC40A8000435D75 /* i8_风速关@3x.png */; };
+		3843FA7D1EC40A8000435D75 /* i8_风速无@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA551EC40A8000435D75 /* i8_风速无@2x.png */; };
+		3843FA7E1EC40A8000435D75 /* i8_风速无@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA561EC40A8000435D75 /* i8_风速无@3x.png */; };
+		3843FA7F1EC40A8000435D75 /* i8_风速自动1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA571EC40A8000435D75 /* i8_风速自动1@2x.png */; };
+		3843FA801EC40A8000435D75 /* i8_风速自动1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA581EC40A8000435D75 /* i8_风速自动1@3x.png */; };
+		3843FA811EC40A8000435D75 /* i8_风速自动2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA591EC40A8000435D75 /* i8_风速自动2@2x.png */; };
+		3843FA821EC40A8000435D75 /* i8_风速自动2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA5A1EC40A8000435D75 /* i8_风速自动2@3x.png */; };
+		3843FA831EC40A8000435D75 /* i8_风速自动3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA5B1EC40A8000435D75 /* i8_风速自动3@2x.png */; };
+		3843FA841EC40A8000435D75 /* i8_风速自动3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA5C1EC40A8000435D75 /* i8_风速自动3@3x.png */; };
+		3843FA851EC40A8000435D75 /* i8_风速自动@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA5D1EC40A8000435D75 /* i8_风速自动@2x.png */; };
+		3843FA861EC40A8000435D75 /* i8_风速自动@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA5E1EC40A8000435D75 /* i8_风速自动@3x.png */; };
+		3843FA871EC40A8000435D75 /* i8_风速高@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA5F1EC40A8000435D75 /* i8_风速高@2x.png */; };
+		3843FA881EC40A8000435D75 /* i8_风速高@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA601EC40A8000435D75 /* i8_风速高@3x.png */; };
+		3843FA8B1EC40A8000435D75 /* 学习_摆风@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA631EC40A8000435D75 /* 学习_摆风@2x.png */; };
+		3843FA8C1EC40A8000435D75 /* 学习_摆风@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA641EC40A8000435D75 /* 学习_摆风@3x.png */; };
+		3843FA8D1EC40A8000435D75 /* 学习_模式@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA651EC40A8000435D75 /* 学习_模式@2x.png */; };
+		3843FA8E1EC40A8000435D75 /* 学习_模式@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA661EC40A8000435D75 /* 学习_模式@3x.png */; };
+		3843FAF61EC4397200435D75 /* i8_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FAF01EC4397200435D75 /* i8_off@2x.png */; };
+		3843FAF71EC4397200435D75 /* i8_off@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FAF11EC4397200435D75 /* i8_off@3x.png */; };
+		3843FAF81EC4397200435D75 /* i8_off关@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FAF21EC4397200435D75 /* i8_off关@3x.png */; };
+		3843FAF91EC4397200435D75 /* i8_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FAF31EC4397200435D75 /* i8_on@2x.png */; };
+		3843FAFA1EC4397200435D75 /* i8_on@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FAF41EC4397200435D75 /* i8_on@3x.png */; };
+		3843FAFB1EC4397200435D75 /* i8_on关@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FAF51EC4397200435D75 /* i8_on关@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +168,48 @@
 		38371A641EC2F0C5005A6BE6 /* 联动_成员列表_女3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "联动_成员列表_女3@3x.png"; sourceTree = "<group>"; };
 		384303B31EC1C7F300B2C9CD /* BlogDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogDetailViewController.h; sourceTree = "<group>"; };
 		384303B41EC1C7F400B2C9CD /* BlogDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogDetailViewController.m; sourceTree = "<group>"; };
+		3843FA031EC3FD7500435D75 /* likonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = likonViewController.h; sourceTree = "<group>"; };
+		3843FA041EC3FD7500435D75 /* likonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = likonViewController.m; sourceTree = "<group>"; };
+		3843FA431EC40A8000435D75 /* i8_定时@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_定时@2x.png"; sourceTree = "<group>"; };
+		3843FA441EC40A8000435D75 /* i8_定时@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_定时@3x.png"; sourceTree = "<group>"; };
+		3843FA451EC40A8000435D75 /* i8_定时关@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_定时关@3x.png"; sourceTree = "<group>"; };
+		3843FA461EC40A8000435D75 /* i8_定时开@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_定时开@3x.png"; sourceTree = "<group>"; };
+		3843FA471EC40A8000435D75 /* i8_开关@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_开关@2x.png"; sourceTree = "<group>"; };
+		3843FA481EC40A8000435D75 /* i8_开关@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_开关@3x.png"; sourceTree = "<group>"; };
+		3843FA491EC40A8000435D75 /* i8_开关关@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_开关关@3x.png"; sourceTree = "<group>"; };
+		3843FA4A1EC40A8000435D75 /* i8_摆头@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_摆头@2x.png"; sourceTree = "<group>"; };
+		3843FA4B1EC40A8000435D75 /* i8_摆头@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_摆头@3x.png"; sourceTree = "<group>"; };
+		3843FA4C1EC40A8000435D75 /* i8_摆头关2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_摆头关2x.png"; sourceTree = "<group>"; };
+		3843FA4D1EC40A8000435D75 /* i8_摆头关@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_摆头关@3x.png"; sourceTree = "<group>"; };
+		3843FA4E1EC40A8000435D75 /* i8_风速@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速@2x.png"; sourceTree = "<group>"; };
+		3843FA4F1EC40A8000435D75 /* i8_风速@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速@3x.png"; sourceTree = "<group>"; };
+		3843FA501EC40A8000435D75 /* i8_风速中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速中@2x.png"; sourceTree = "<group>"; };
+		3843FA511EC40A8000435D75 /* i8_风速中@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速中@3x.png"; sourceTree = "<group>"; };
+		3843FA521EC40A8000435D75 /* i8_风速低@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速低@2x.png"; sourceTree = "<group>"; };
+		3843FA531EC40A8000435D75 /* i8_风速低@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速低@3x.png"; sourceTree = "<group>"; };
+		3843FA541EC40A8000435D75 /* i8_风速关@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速关@3x.png"; sourceTree = "<group>"; };
+		3843FA551EC40A8000435D75 /* i8_风速无@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速无@2x.png"; sourceTree = "<group>"; };
+		3843FA561EC40A8000435D75 /* i8_风速无@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速无@3x.png"; sourceTree = "<group>"; };
+		3843FA571EC40A8000435D75 /* i8_风速自动1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速自动1@2x.png"; sourceTree = "<group>"; };
+		3843FA581EC40A8000435D75 /* i8_风速自动1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速自动1@3x.png"; sourceTree = "<group>"; };
+		3843FA591EC40A8000435D75 /* i8_风速自动2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速自动2@2x.png"; sourceTree = "<group>"; };
+		3843FA5A1EC40A8000435D75 /* i8_风速自动2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速自动2@3x.png"; sourceTree = "<group>"; };
+		3843FA5B1EC40A8000435D75 /* i8_风速自动3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速自动3@2x.png"; sourceTree = "<group>"; };
+		3843FA5C1EC40A8000435D75 /* i8_风速自动3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速自动3@3x.png"; sourceTree = "<group>"; };
+		3843FA5D1EC40A8000435D75 /* i8_风速自动@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速自动@2x.png"; sourceTree = "<group>"; };
+		3843FA5E1EC40A8000435D75 /* i8_风速自动@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速自动@3x.png"; sourceTree = "<group>"; };
+		3843FA5F1EC40A8000435D75 /* i8_风速高@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速高@2x.png"; sourceTree = "<group>"; };
+		3843FA601EC40A8000435D75 /* i8_风速高@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_风速高@3x.png"; sourceTree = "<group>"; };
+		3843FA631EC40A8000435D75 /* 学习_摆风@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "学习_摆风@2x.png"; sourceTree = "<group>"; };
+		3843FA641EC40A8000435D75 /* 学习_摆风@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "学习_摆风@3x.png"; sourceTree = "<group>"; };
+		3843FA651EC40A8000435D75 /* 学习_模式@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "学习_模式@2x.png"; sourceTree = "<group>"; };
+		3843FA661EC40A8000435D75 /* 学习_模式@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "学习_模式@3x.png"; sourceTree = "<group>"; };
+		3843FAF01EC4397200435D75 /* i8_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_off@2x.png"; sourceTree = "<group>"; };
+		3843FAF11EC4397200435D75 /* i8_off@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_off@3x.png"; sourceTree = "<group>"; };
+		3843FAF21EC4397200435D75 /* i8_off关@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_off关@3x.png"; sourceTree = "<group>"; };
+		3843FAF31EC4397200435D75 /* i8_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_on@2x.png"; sourceTree = "<group>"; };
+		3843FAF41EC4397200435D75 /* i8_on@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_on@3x.png"; sourceTree = "<group>"; };
+		3843FAF51EC4397200435D75 /* i8_on关@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_on关@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +263,7 @@
 		3833DEF71EC1B2880099E9B4 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				3843FA021EC3FD2200435D75 /* 林肯 */,
 				38371A5A1EC2DF3D005A6BE6 /* Quartz2D */,
 				3833DF641EC1C04C0099E9B4 /* 博客 */,
 				3833DF021EC1B2F40099E9B4 /* 贝塞尔曲线 */,
@@ -353,6 +437,63 @@
 			path = Quartz2D;
 			sourceTree = "<group>";
 		};
+		3843FA021EC3FD2200435D75 /* 林肯 */ = {
+			isa = PBXGroup;
+			children = (
+				3843FA421EC40A8000435D75 /* resource */,
+				3843FA031EC3FD7500435D75 /* likonViewController.h */,
+				3843FA041EC3FD7500435D75 /* likonViewController.m */,
+			);
+			path = "林肯";
+			sourceTree = "<group>";
+		};
+		3843FA421EC40A8000435D75 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				3843FA461EC40A8000435D75 /* i8_定时开@3x.png */,
+				3843FA451EC40A8000435D75 /* i8_定时关@3x.png */,
+				3843FA471EC40A8000435D75 /* i8_开关@2x.png */,
+				3843FA481EC40A8000435D75 /* i8_开关@3x.png */,
+				3843FA491EC40A8000435D75 /* i8_开关关@3x.png */,
+				3843FA4A1EC40A8000435D75 /* i8_摆头@2x.png */,
+				3843FA4B1EC40A8000435D75 /* i8_摆头@3x.png */,
+				3843FA4C1EC40A8000435D75 /* i8_摆头关2x.png */,
+				3843FA4D1EC40A8000435D75 /* i8_摆头关@3x.png */,
+				3843FA631EC40A8000435D75 /* 学习_摆风@2x.png */,
+				3843FA641EC40A8000435D75 /* 学习_摆风@3x.png */,
+				3843FA431EC40A8000435D75 /* i8_定时@2x.png */,
+				3843FA441EC40A8000435D75 /* i8_定时@3x.png */,
+				3843FAF01EC4397200435D75 /* i8_off@2x.png */,
+				3843FAF11EC4397200435D75 /* i8_off@3x.png */,
+				3843FAF21EC4397200435D75 /* i8_off关@3x.png */,
+				3843FAF31EC4397200435D75 /* i8_on@2x.png */,
+				3843FAF41EC4397200435D75 /* i8_on@3x.png */,
+				3843FAF51EC4397200435D75 /* i8_on关@3x.png */,
+				3843FA651EC40A8000435D75 /* 学习_模式@2x.png */,
+				3843FA661EC40A8000435D75 /* 学习_模式@3x.png */,
+				3843FA4E1EC40A8000435D75 /* i8_风速@2x.png */,
+				3843FA4F1EC40A8000435D75 /* i8_风速@3x.png */,
+				3843FA541EC40A8000435D75 /* i8_风速关@3x.png */,
+				3843FA521EC40A8000435D75 /* i8_风速低@2x.png */,
+				3843FA531EC40A8000435D75 /* i8_风速低@3x.png */,
+				3843FA501EC40A8000435D75 /* i8_风速中@2x.png */,
+				3843FA511EC40A8000435D75 /* i8_风速中@3x.png */,
+				3843FA5F1EC40A8000435D75 /* i8_风速高@2x.png */,
+				3843FA601EC40A8000435D75 /* i8_风速高@3x.png */,
+				3843FA551EC40A8000435D75 /* i8_风速无@2x.png */,
+				3843FA561EC40A8000435D75 /* i8_风速无@3x.png */,
+				3843FA571EC40A8000435D75 /* i8_风速自动1@2x.png */,
+				3843FA581EC40A8000435D75 /* i8_风速自动1@3x.png */,
+				3843FA591EC40A8000435D75 /* i8_风速自动2@2x.png */,
+				3843FA5A1EC40A8000435D75 /* i8_风速自动2@3x.png */,
+				3843FA5B1EC40A8000435D75 /* i8_风速自动3@2x.png */,
+				3843FA5C1EC40A8000435D75 /* i8_风速自动3@3x.png */,
+				3843FA5D1EC40A8000435D75 /* i8_风速自动@2x.png */,
+				3843FA5E1EC40A8000435D75 /* i8_风速自动@3x.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -412,27 +553,67 @@
 			buildActionMask = 2147483647;
 			files = (
 				3833DF531EC1B2F40099E9B4 /* p03_icon_camera6_n_01@3x.png in Resources */,
+				3843FAFA1EC4397200435D75 /* i8_on@3x.png in Resources */,
+				3843FA6E1EC40A8000435D75 /* i8_定时开@3x.png in Resources */,
+				3843FA8C1EC40A8000435D75 /* 学习_摆风@3x.png in Resources */,
+				3843FA861EC40A8000435D75 /* i8_风速自动@3x.png in Resources */,
+				3843FA751EC40A8000435D75 /* i8_摆头关@3x.png in Resources */,
+				3843FA771EC40A8000435D75 /* i8_风速@3x.png in Resources */,
 				3833DF5B1EC1B2F40099E9B4 /* image.png in Resources */,
+				3843FA6D1EC40A8000435D75 /* i8_定时关@3x.png in Resources */,
+				3843FA731EC40A8000435D75 /* i8_摆头@3x.png in Resources */,
 				3833DEF01EC1B2600099E9B4 /* LaunchScreen.storyboard in Resources */,
+				3843FA8D1EC40A8000435D75 /* 学习_模式@2x.png in Resources */,
 				3833DF511EC1B2F40099E9B4 /* p03_icon_camera5_n_01@3x.png in Resources */,
 				3833DF4A1EC1B2F40099E9B4 /* p03_icon_camera2_n_01@2x.png in Resources */,
 				3833DF491EC1B2F40099E9B4 /* p03_icon_camera1_n_01@3x.png in Resources */,
+				3843FAF81EC4397200435D75 /* i8_off关@3x.png in Resources */,
 				3833DF551EC1B2F40099E9B4 /* p03_img_qp1_n_01@3x.png in Resources */,
+				3843FA851EC40A8000435D75 /* i8_风速自动@2x.png in Resources */,
 				3833DF4B1EC1B2F40099E9B4 /* p03_icon_camera2_n_01@3x.png in Resources */,
+				3843FA741EC40A8000435D75 /* i8_摆头关2x.png in Resources */,
+				3843FA831EC40A8000435D75 /* i8_风速自动3@2x.png in Resources */,
+				3843FA8B1EC40A8000435D75 /* 学习_摆风@2x.png in Resources */,
+				3843FA7B1EC40A8000435D75 /* i8_风速低@3x.png in Resources */,
+				3843FAF61EC4397200435D75 /* i8_off@2x.png in Resources */,
 				3833DF541EC1B2F40099E9B4 /* p03_img_qp1_n_01@2x.png in Resources */,
+				3843FA7F1EC40A8000435D75 /* i8_风速自动1@2x.png in Resources */,
 				3833DF4D1EC1B2F40099E9B4 /* p03_icon_camera3_n_01@3x.png in Resources */,
+				3843FA701EC40A8000435D75 /* i8_开关@3x.png in Resources */,
+				3843FA821EC40A8000435D75 /* i8_风速自动2@3x.png in Resources */,
 				3833DF4F1EC1B2F40099E9B4 /* p03_icon_camera4_n_01@3x.png in Resources */,
+				3843FA881EC40A8000435D75 /* i8_风速高@3x.png in Resources */,
 				3833DF521EC1B2F40099E9B4 /* p03_icon_camera6_n_01@2x.png in Resources */,
+				3843FA811EC40A8000435D75 /* i8_风速自动2@2x.png in Resources */,
+				3843FA7E1EC40A8000435D75 /* i8_风速无@3x.png in Resources */,
+				3843FAF91EC4397200435D75 /* i8_on@2x.png in Resources */,
+				3843FA8E1EC40A8000435D75 /* 学习_模式@3x.png in Resources */,
+				3843FA761EC40A8000435D75 /* i8_风速@2x.png in Resources */,
+				3843FA721EC40A8000435D75 /* i8_摆头@2x.png in Resources */,
+				3843FA6C1EC40A8000435D75 /* i8_定时@3x.png in Resources */,
 				3833DEED1EC1B2600099E9B4 /* Assets.xcassets in Resources */,
+				3843FA871EC40A8000435D75 /* i8_风速高@2x.png in Resources */,
+				3843FA711EC40A8000435D75 /* i8_开关关@3x.png in Resources */,
 				3833DF401EC1B2F40099E9B4 /* AppIcon-129x29@2x.png in Resources */,
+				3843FA791EC40A8000435D75 /* i8_风速中@3x.png in Resources */,
 				3833DF481EC1B2F40099E9B4 /* p03_icon_camera1_n_01@2x.png in Resources */,
+				3843FA801EC40A8000435D75 /* i8_风速自动1@3x.png in Resources */,
 				3833DF571EC1B2F40099E9B4 /* p03_img_qp2_n_01@3x.png in Resources */,
+				3843FA781EC40A8000435D75 /* i8_风速中@2x.png in Resources */,
 				3833DF5A1EC1B2F40099E9B4 /* background.png in Resources */,
+				3843FAFB1EC4397200435D75 /* i8_on关@3x.png in Resources */,
+				3843FA841EC40A8000435D75 /* i8_风速自动3@3x.png in Resources */,
+				3843FA7D1EC40A8000435D75 /* i8_风速无@2x.png in Resources */,
+				3843FA6F1EC40A8000435D75 /* i8_开关@2x.png in Resources */,
+				3843FA6B1EC40A8000435D75 /* i8_定时@2x.png in Resources */,
 				3833DF4E1EC1B2F40099E9B4 /* p03_icon_camera4_n_01@2x.png in Resources */,
 				38371A651EC2F0C5005A6BE6 /* 联动_成员列表_女3@3x.png in Resources */,
 				3833DF561EC1B2F40099E9B4 /* p03_img_qp2_n_01@2x.png in Resources */,
+				3843FA7A1EC40A8000435D75 /* i8_风速低@2x.png in Resources */,
 				3833DF501EC1B2F40099E9B4 /* p03_icon_camera5_n_01@2x.png in Resources */,
+				3843FA7C1EC40A8000435D75 /* i8_风速关@3x.png in Resources */,
 				3833DF5D1EC1B2F40099E9B4 /* MyTableViewCell.xib in Resources */,
+				3843FAF71EC4397200435D75 /* i8_off@3x.png in Resources */,
 				3833DF4C1EC1B2F40099E9B4 /* p03_icon_camera3_n_01@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +637,7 @@
 				3833DF001EC1B2880099E9B4 /* ListTableViewCell.m in Sources */,
 				3833DF451EC1B2F40099E9B4 /* WaveProgressController.m in Sources */,
 				3833DEFF1EC1B2880099E9B4 /* AppDelegate.m in Sources */,
+				3843FA051EC3FD7500435D75 /* likonViewController.m in Sources */,
 				3833DF011EC1B2880099E9B4 /* ViewController.m in Sources */,
 				3833DF5F1EC1B2F40099E9B4 /* UIView+Snapshot.m in Sources */,
 				3833DF461EC1B2F40099E9B4 /* WaveProgressView.m in Sources */,

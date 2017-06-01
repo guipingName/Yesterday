@@ -79,6 +79,7 @@ static NSString *identifier = @"ListTableViewCell";
                   @"贝塞尔曲线",
                   @"Quartz2D",
                   @"博客",
+                  @"林肯控制界面",
                   nil];
     
     describeArray = [NSArray arrayWithObjects:
@@ -91,6 +92,7 @@ static NSString *identifier = @"ListTableViewCell";
                      @"绘制直线、圆、曲线。。。",
                      @"Quartz绘制直线、圆、矩形",
                      @"大牛们写的博客",
+                     @"控制林肯设备",
                      nil];
     
     classArray = [NSArray arrayWithObjects:
@@ -103,6 +105,7 @@ static NSString *identifier = @"ListTableViewCell";
                   @"BezierPathViewController",
                   @"Quartz2DViewController",
                   @"BlogTableViewController",
+                  @"likonViewController",
                   nil];
     
     [self.myTableView reloadData];

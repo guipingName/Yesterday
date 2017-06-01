@@ -211,7 +211,7 @@
     // 如果画同心圆使外边缘或内边缘对齐可适当调整半径
     
     //外圆
-    UIBezierPath *_trackPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(WIDTH / 4, HEIGHT / 2 - 120) radius:40 + 1 startAngle:0 endAngle:M_PI * 2 clockwise:YES];;
+    UIBezierPath *_trackPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(WIDTH / 4, HEIGHT / 2 - 120) radius:40 + 1 startAngle:0 endAngle:M_PI * 2 clockwise:YES];
     
     CAShapeLayer *_trackLayer = [CAShapeLayer new];
     _trackLayer.frame = mybound;

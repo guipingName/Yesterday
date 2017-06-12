@@ -32,7 +32,6 @@ static NSString *identifier = @"ListTableViewCell";
     [self loadData];
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -80,6 +79,7 @@ static NSString *identifier = @"ListTableViewCell";
                   @"Quartz2D",
                   @"博客",
                   @"林肯控制界面",
+                  @"天气动画",
                   nil];
     
     describeArray = [NSArray arrayWithObjects:
@@ -93,6 +93,7 @@ static NSString *identifier = @"ListTableViewCell";
                      @"Quartz绘制直线、圆、矩形",
                      @"大牛们写的博客",
                      @"控制林肯设备",
+                     @"风雨云雪动画效果",
                      nil];
     
     classArray = [NSArray arrayWithObjects:
@@ -106,6 +107,7 @@ static NSString *identifier = @"ListTableViewCell";
                   @"Quartz2DViewController",
                   @"BlogTableViewController",
                   @"likonViewController",
+                  @"WeatherViewController",
                   nil];
     
     [self.myTableView reloadData];

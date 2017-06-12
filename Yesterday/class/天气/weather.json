@@ -1,0 +1,59 @@
+{
+  "results" : [
+    {
+      "daily" : [
+        {
+          "code_day" : "1",
+          "code_night" : "13",
+          "date" : "2017-06-08",
+          "high" : "27",
+          "low" : "21",
+          "precip" : "",
+          "text_day" : "阴",
+          "text_night" : "小雨",
+          "wind_direction" : "无持续风向",
+          "wind_direction_degree" : "",
+          "wind_scale" : "2",
+          "wind_speed" : "10"
+        },
+        {
+          "code_day" : "0",
+          "code_night" : "13",
+          "date" : "2017-06-09",
+          "high" : "28",
+          "low" : "21",
+          "precip" : "",
+          "text_day" : "阴",
+          "text_night" : "小雨",
+          "wind_direction" : "无持续风向",
+          "wind_direction_degree" : "",
+          "wind_scale" : "2",
+          "wind_speed" : "10"
+        },
+        {
+          "code_day" : "2",
+          "code_night" : "4",
+          "date" : "2017-06-10",
+          "high" : "30",
+          "low" : "23",
+          "precip" : "",
+          "text_day" : "阴",
+          "text_night" : "多云",
+          "wind_direction" : "无持续风向",
+          "wind_direction_degree" : "",
+          "wind_scale" : "2",
+          "wind_speed" : "10"
+        }
+      ],
+      "last_update" : "2017-06-08T11:00:00+08:00",
+      "location" : {
+        "country" : "CN",
+        "id" : "WM6N2PM3WY2K",
+        "name" : "成都",
+        "path" : "成都,成都,四川,中国",
+        "timezone" : "Asia/Shanghai",
+        "timezone_offset" : "+08:00"
+      }
+    }
+  ]
+}

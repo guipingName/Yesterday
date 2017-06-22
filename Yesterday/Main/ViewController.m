@@ -60,10 +60,59 @@ static NSString *identifier = @"ListTableViewCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *tempStr = classArray[indexPath.row];
+    if ([tempStr isEqualToString:@"likonViewController"]) {
+        [self abc];
+        return;
+    }
     Class class = NSClassFromString(tempStr);
     UIViewController *vc = [[class alloc]init];
     vc.title = titleArray[indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void) abc{
+    UIViewController *centerviews;
+    NSMutableArray *views = [[NSMutableArray alloc] initWithCapacity:5];
+    NSMutableArray *viewNames = [[NSMutableArray alloc] initWithCapacity:5];
+    
+    [viewNames addObject:@"likonViewController"];
+    [viewNames addObject:@"ElectricViewController"];
+    [viewNames addObject:@"SmartSettingViewController"];
+    
+    
+    [viewNames enumerateObjectsUsingBlock:^(id obj,NSUInteger idx,BOOL*stop){
+        NSString* pageName = obj;
+        UIViewController* base = [[NSClassFromString(pageName) alloc] init];
+        if (base) {
+            UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:base];
+            [views addObject:nav];
+        }
+    }];
+    
+    UITabBarController * center;
+    center = [[UITabBarController alloc] init];
+    center.tabBar.tintColor = [UIColor colorWithRed:0/255.0 green:174/255.0 blue:225/255.0 alpha:1];
+    center.tabBar.backgroundImage = [self imageWithColor:[UIColor whiteColor] andSize:center.tabBar.frame.size];
+    center.viewControllers = views;
+    centerviews = center;
+    [self presentViewController:centerviews animated:YES completion:nil];
+}
+
+- (UIImage *)imageWithColor:(UIColor *)color andSize:(CGSize)size
+{
+    UIImage *img = nil;
+    
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context,
+                                   color.CGColor);
+    CGContextFillRect(context, rect);
+    img = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return img;
 }
 
 #pragma mark --------------- 数据 ----------------

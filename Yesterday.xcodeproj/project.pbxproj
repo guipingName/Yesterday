@@ -52,6 +52,7 @@
 		38371A5D1EC2DF82005A6BE6 /* Quartz2DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38371A5C1EC2DF82005A6BE6 /* Quartz2DViewController.m */; };
 		38371A631EC2DFEC005A6BE6 /* QuartzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38371A621EC2DFEC005A6BE6 /* QuartzView.m */; };
 		38371A651EC2F0C5005A6BE6 /* 联动_成员列表_女3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38371A641EC2F0C5005A6BE6 /* 联动_成员列表_女3@3x.png */; };
+		383B61B61EFA0359007148C1 /* GPPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 383B61B51EFA0359007148C1 /* GPPickerView.m */; };
 		384303B51EC1C7F400B2C9CD /* BlogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384303B41EC1C7F400B2C9CD /* BlogDetailViewController.m */; };
 		3843FA051EC3FD7500435D75 /* likonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3843FA041EC3FD7500435D75 /* likonViewController.m */; };
 		3843FA6B1EC40A8000435D75 /* i8_定时@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FA431EC40A8000435D75 /* i8_定时@2x.png */; };
@@ -94,6 +95,27 @@
 		3843FAF91EC4397200435D75 /* i8_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FAF31EC4397200435D75 /* i8_on@2x.png */; };
 		3843FAFA1EC4397200435D75 /* i8_on@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FAF41EC4397200435D75 /* i8_on@3x.png */; };
 		3843FAFB1EC4397200435D75 /* i8_on关@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3843FAF51EC4397200435D75 /* i8_on关@3x.png */; };
+		38463B5A1EF8B16F00130299 /* ElectricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38463B591EF8B16F00130299 /* ElectricViewController.m */; };
+		38463B5D1EF8B17B00130299 /* SmartSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38463B5C1EF8B17B00130299 /* SmartSettingViewController.m */; };
+		38463B631EF8FD2F00130299 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 38463B621EF8FD2F00130299 /* Circle.m */; };
+		38463B6F1EF9100200130299 /* warm_智能设置未选中@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B641EF9100200130299 /* warm_智能设置未选中@3x.png */; };
+		38463B701EF9100200130299 /* 遥控面板选中@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B651EF9100200130299 /* 遥控面板选中@3x.png */; };
+		38463B711EF9100200130299 /* 电量管家选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B661EF9100200130299 /* 电量管家选中@2x.png */; };
+		38463B721EF9100200130299 /* 遥控面板@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B671EF9100200130299 /* 遥控面板@2x.png */; };
+		38463B731EF9100200130299 /* 电量管家选中@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B681EF9100200130299 /* 电量管家选中@3x.png */; };
+		38463B741EF9100200130299 /* 电量管家@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B691EF9100200130299 /* 电量管家@3x.png */; };
+		38463B751EF9100200130299 /* warm_智能设置@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B6A1EF9100200130299 /* warm_智能设置@2x.png */; };
+		38463B761EF9100200130299 /* warm_智能设置@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B6B1EF9100200130299 /* warm_智能设置@3x.png */; };
+		38463B771EF9100200130299 /* warm_智能设置未选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B6C1EF9100200130299 /* warm_智能设置未选中@2x.png */; };
+		38463B781EF9100200130299 /* 遥控面板选中@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B6D1EF9100200130299 /* 遥控面板选中@2x.png */; };
+		38463B791EF9100200130299 /* 遥控面板@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B6E1EF9100200130299 /* 遥控面板@3x.png */; };
+		38463B7C1EF91D3D00130299 /* i8_室温@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B7A1EF91D3D00130299 /* i8_室温@3x.png */; };
+		38463B7D1EF91D3D00130299 /* i8_湿度@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B7B1EF91D3D00130299 /* i8_湿度@3x.png */; };
+		38463B7F1EF9238100130299 /* 情景遥控解锁_控制@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B7E1EF9238100130299 /* 情景遥控解锁_控制@3x.png */; };
+		38463B811EF9239A00130299 /* 情景遥控锁_控制@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B801EF9239A00130299 /* 情景遥控锁_控制@3x.png */; };
+		38463B851EF9295800130299 /* i8_模式@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B821EF9295800130299 /* i8_模式@2x.png */; };
+		38463B861EF9295800130299 /* i8_模式@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B831EF9295800130299 /* i8_模式@3x.png */; };
+		38463B871EF9295800130299 /* i8_模式关@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B841EF9295800130299 /* i8_模式关@3x.png */; };
 		38943E321EE92DC900CD6169 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38943E311EE92DC900CD6169 /* WeatherViewController.m */; };
 		38943E351EE92E0000CD6169 /* WeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38943E341EE92E0000CD6169 /* WeatherView.m */; };
 		38943E381EE92ECD00CD6169 /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38943E371EE92ECD00CD6169 /* WeatherModel.m */; };
@@ -259,6 +281,8 @@
 		38371A611EC2DFEC005A6BE6 /* QuartzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzView.h; sourceTree = "<group>"; };
 		38371A621EC2DFEC005A6BE6 /* QuartzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzView.m; sourceTree = "<group>"; };
 		38371A641EC2F0C5005A6BE6 /* 联动_成员列表_女3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "联动_成员列表_女3@3x.png"; sourceTree = "<group>"; };
+		383B61B41EFA0359007148C1 /* GPPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPPickerView.h; sourceTree = "<group>"; };
+		383B61B51EFA0359007148C1 /* GPPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPPickerView.m; sourceTree = "<group>"; };
 		384303B31EC1C7F300B2C9CD /* BlogDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogDetailViewController.h; sourceTree = "<group>"; };
 		384303B41EC1C7F400B2C9CD /* BlogDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogDetailViewController.m; sourceTree = "<group>"; };
 		3843FA031EC3FD7500435D75 /* likonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = likonViewController.h; sourceTree = "<group>"; };
@@ -303,6 +327,30 @@
 		3843FAF31EC4397200435D75 /* i8_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_on@2x.png"; sourceTree = "<group>"; };
 		3843FAF41EC4397200435D75 /* i8_on@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_on@3x.png"; sourceTree = "<group>"; };
 		3843FAF51EC4397200435D75 /* i8_on关@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_on关@3x.png"; sourceTree = "<group>"; };
+		38463B581EF8B16F00130299 /* ElectricViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectricViewController.h; sourceTree = "<group>"; };
+		38463B591EF8B16F00130299 /* ElectricViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectricViewController.m; sourceTree = "<group>"; };
+		38463B5B1EF8B17B00130299 /* SmartSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartSettingViewController.h; sourceTree = "<group>"; };
+		38463B5C1EF8B17B00130299 /* SmartSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartSettingViewController.m; sourceTree = "<group>"; };
+		38463B611EF8FD2F00130299 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		38463B621EF8FD2F00130299 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		38463B641EF9100200130299 /* warm_智能设置未选中@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warm_智能设置未选中@3x.png"; sourceTree = "<group>"; };
+		38463B651EF9100200130299 /* 遥控面板选中@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "遥控面板选中@3x.png"; sourceTree = "<group>"; };
+		38463B661EF9100200130299 /* 电量管家选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电量管家选中@2x.png"; sourceTree = "<group>"; };
+		38463B671EF9100200130299 /* 遥控面板@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "遥控面板@2x.png"; sourceTree = "<group>"; };
+		38463B681EF9100200130299 /* 电量管家选中@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电量管家选中@3x.png"; sourceTree = "<group>"; };
+		38463B691EF9100200130299 /* 电量管家@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电量管家@3x.png"; sourceTree = "<group>"; };
+		38463B6A1EF9100200130299 /* warm_智能设置@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warm_智能设置@2x.png"; sourceTree = "<group>"; };
+		38463B6B1EF9100200130299 /* warm_智能设置@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warm_智能设置@3x.png"; sourceTree = "<group>"; };
+		38463B6C1EF9100200130299 /* warm_智能设置未选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warm_智能设置未选中@2x.png"; sourceTree = "<group>"; };
+		38463B6D1EF9100200130299 /* 遥控面板选中@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "遥控面板选中@2x.png"; sourceTree = "<group>"; };
+		38463B6E1EF9100200130299 /* 遥控面板@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "遥控面板@3x.png"; sourceTree = "<group>"; };
+		38463B7A1EF91D3D00130299 /* i8_室温@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_室温@3x.png"; sourceTree = "<group>"; };
+		38463B7B1EF91D3D00130299 /* i8_湿度@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_湿度@3x.png"; sourceTree = "<group>"; };
+		38463B7E1EF9238100130299 /* 情景遥控解锁_控制@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "情景遥控解锁_控制@3x.png"; sourceTree = "<group>"; };
+		38463B801EF9239A00130299 /* 情景遥控锁_控制@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "情景遥控锁_控制@3x.png"; sourceTree = "<group>"; };
+		38463B821EF9295800130299 /* i8_模式@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_模式@2x.png"; sourceTree = "<group>"; };
+		38463B831EF9295800130299 /* i8_模式@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_模式@3x.png"; sourceTree = "<group>"; };
+		38463B841EF9295800130299 /* i8_模式关@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_模式关@3x.png"; sourceTree = "<group>"; };
 		38943E301EE92DC900CD6169 /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
 		38943E311EE92DC900CD6169 /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
 		38943E331EE92E0000CD6169 /* WeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherView.h; sourceTree = "<group>"; };
@@ -633,6 +681,14 @@
 				3843FA421EC40A8000435D75 /* resource */,
 				3843FA031EC3FD7500435D75 /* likonViewController.h */,
 				3843FA041EC3FD7500435D75 /* likonViewController.m */,
+				38463B611EF8FD2F00130299 /* Circle.h */,
+				38463B621EF8FD2F00130299 /* Circle.m */,
+				383B61B41EFA0359007148C1 /* GPPickerView.h */,
+				383B61B51EFA0359007148C1 /* GPPickerView.m */,
+				38463B581EF8B16F00130299 /* ElectricViewController.h */,
+				38463B591EF8B16F00130299 /* ElectricViewController.m */,
+				38463B5B1EF8B17B00130299 /* SmartSettingViewController.h */,
+				38463B5C1EF8B17B00130299 /* SmartSettingViewController.m */,
 			);
 			path = "林肯";
 			sourceTree = "<group>";
@@ -640,6 +696,24 @@
 		3843FA421EC40A8000435D75 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				38463B821EF9295800130299 /* i8_模式@2x.png */,
+				38463B831EF9295800130299 /* i8_模式@3x.png */,
+				38463B841EF9295800130299 /* i8_模式关@3x.png */,
+				38463B7E1EF9238100130299 /* 情景遥控解锁_控制@3x.png */,
+				38463B801EF9239A00130299 /* 情景遥控锁_控制@3x.png */,
+				38463B7A1EF91D3D00130299 /* i8_室温@3x.png */,
+				38463B7B1EF91D3D00130299 /* i8_湿度@3x.png */,
+				38463B671EF9100200130299 /* 遥控面板@2x.png */,
+				38463B6E1EF9100200130299 /* 遥控面板@3x.png */,
+				38463B6D1EF9100200130299 /* 遥控面板选中@2x.png */,
+				38463B651EF9100200130299 /* 遥控面板选中@3x.png */,
+				38463B691EF9100200130299 /* 电量管家@3x.png */,
+				38463B661EF9100200130299 /* 电量管家选中@2x.png */,
+				38463B681EF9100200130299 /* 电量管家选中@3x.png */,
+				38463B6A1EF9100200130299 /* warm_智能设置@2x.png */,
+				38463B6B1EF9100200130299 /* warm_智能设置@3x.png */,
+				38463B6C1EF9100200130299 /* warm_智能设置未选中@2x.png */,
+				38463B641EF9100200130299 /* warm_智能设置未选中@3x.png */,
 				3843FA461EC40A8000435D75 /* i8_定时开@3x.png */,
 				3843FA451EC40A8000435D75 /* i8_定时关@3x.png */,
 				3843FA471EC40A8000435D75 /* i8_开关@2x.png */,
@@ -895,6 +969,8 @@
 				3843FA751EC40A8000435D75 /* i8_摆头关@3x.png in Resources */,
 				3843FA771EC40A8000435D75 /* i8_风速@3x.png in Resources */,
 				3833DF5B1EC1B2F40099E9B4 /* image.png in Resources */,
+				38463B731EF9100200130299 /* 电量管家选中@3x.png in Resources */,
+				38463B6F1EF9100200130299 /* warm_智能设置未选中@3x.png in Resources */,
 				3843FA6D1EC40A8000435D75 /* i8_定时关@3x.png in Resources */,
 				38943E9E1EE931EE00CD6169 /* ele_sunnyBird5.png in Resources */,
 				38943EE61EE931EE00CD6169 /* 32.png in Resources */,
@@ -905,16 +981,21 @@
 				38943EBC1EE931EE00CD6169 /* bg_normal.jpg in Resources */,
 				38943EE91EE931EE00CD6169 /* 35.png in Resources */,
 				38943EC51EE931EE00CD6169 /* ele_rainLine3.png in Resources */,
+				38463B791EF9100200130299 /* 遥控面板@3x.png in Resources */,
 				3843FA8D1EC40A8000435D75 /* 学习_模式@2x.png in Resources */,
 				38943EC21EE931EE00CD6169 /* bg_sunny_night.jpg in Resources */,
 				38943EE51EE931EE00CD6169 /* 31.png in Resources */,
+				38463B811EF9239A00130299 /* 情景遥控锁_控制@3x.png in Resources */,
 				38943EBD1EE931EE00CD6169 /* bg_rain_day.jpg in Resources */,
 				3833DF511EC1B2F40099E9B4 /* p03_icon_camera5_n_01@3x.png in Resources */,
 				38943EF11EE931EE00CD6169 /* 8.png in Resources */,
 				38943EA71EE931EE00CD6169 /* ele_sunnyBirdInvertedImage6.png in Resources */,
 				38943E9C1EE931EE00CD6169 /* ele_sunnyBird3.png in Resources */,
+				38463B7C1EF91D3D00130299 /* i8_室温@3x.png in Resources */,
 				38943EE11EE931EE00CD6169 /* 28.png in Resources */,
+				38463B761EF9100200130299 /* warm_智能设置@3x.png in Resources */,
 				38943E3C1EE931C600CD6169 /* rainData.json in Resources */,
+				38463B861EF9295800130299 /* i8_模式@3x.png in Resources */,
 				3833DF4A1EC1B2F40099E9B4 /* p03_icon_camera2_n_01@2x.png in Resources */,
 				3833DF491EC1B2F40099E9B4 /* p03_icon_camera1_n_01@3x.png in Resources */,
 				38943EAB1EE931EE00CD6169 /* ele_sunnyCloud2.png in Resources */,
@@ -924,6 +1005,7 @@
 				3843FA851EC40A8000435D75 /* i8_风速自动@2x.png in Resources */,
 				38943EE21EE931EE00CD6169 /* 29.png in Resources */,
 				38943EB21EE931EE00CD6169 /* ele_sunnyNightWave2.png in Resources */,
+				38463B781EF9100200130299 /* 遥控面板选中@2x.png in Resources */,
 				3833DF4B1EC1B2F40099E9B4 /* p03_icon_camera2_n_01@3x.png in Resources */,
 				38943EB11EE931EE00CD6169 /* ele_sunnyNightWave1.png in Resources */,
 				38943ED91EE931EE00CD6169 /* 20.png in Resources */,
@@ -935,6 +1017,7 @@
 				3843FA831EC40A8000435D75 /* i8_风速自动3@2x.png in Resources */,
 				38943EA31EE931EE00CD6169 /* ele_sunnyBirdInvertedImage2.png in Resources */,
 				3843FA8B1EC40A8000435D75 /* 学习_摆风@2x.png in Resources */,
+				38463B851EF9295800130299 /* i8_模式@2x.png in Resources */,
 				38943EC71EE931EE00CD6169 /* navBg3.png in Resources */,
 				3843FA7B1EC40A8000435D75 /* i8_风速低@3x.png in Resources */,
 				3843FAF61EC4397200435D75 /* i8_off@2x.png in Resources */,
@@ -952,7 +1035,9 @@
 				3843FA881EC40A8000435D75 /* i8_风速高@3x.png in Resources */,
 				38943EAC1EE931EE00CD6169 /* ele_sunnyNightFirefly.png in Resources */,
 				3833DF521EC1B2F40099E9B4 /* p03_icon_camera6_n_01@2x.png in Resources */,
+				38463B871EF9295800130299 /* i8_模式关@3x.png in Resources */,
 				3843FA811EC40A8000435D75 /* i8_风速自动2@2x.png in Resources */,
+				38463B701EF9100200130299 /* 遥控面板选中@3x.png in Resources */,
 				3843FA7E1EC40A8000435D75 /* i8_风速无@3x.png in Resources */,
 				3843FAF91EC4397200435D75 /* i8_on@2x.png in Resources */,
 				38943EEF1EE931EE00CD6169 /* 6.png in Resources */,
@@ -968,8 +1053,11 @@
 				38943EE71EE931EE00CD6169 /* 33.png in Resources */,
 				3843FA6C1EC40A8000435D75 /* i8_定时@3x.png in Resources */,
 				38943EBA1EE931EE00CD6169 /* bg_na.jpg in Resources */,
+				38463B751EF9100200130299 /* warm_智能设置@2x.png in Resources */,
 				38943EB01EE931EE00CD6169 /* ele_sunnyNightStar2.png in Resources */,
 				38943EA91EE931EE00CD6169 /* ele_sunnyBirdInvertedImage8.png in Resources */,
+				38463B7D1EF91D3D00130299 /* i8_湿度@3x.png in Resources */,
+				38463B711EF9100200130299 /* 电量管家选中@2x.png in Resources */,
 				38943EBE1EE931EE00CD6169 /* bg_rain_night.jpg in Resources */,
 				3833DEED1EC1B2600099E9B4 /* Assets.xcassets in Resources */,
 				38943EAA1EE931EE00CD6169 /* ele_sunnyCloud1.png in Resources */,
@@ -990,10 +1078,12 @@
 				38943EBF1EE931EE00CD6169 /* bg_snow_day.jpg in Resources */,
 				38943EAE1EE931EE00CD6169 /* ele_sunnyNightMeteor2.png in Resources */,
 				38943EF21EE931EE00CD6169 /* 9.png in Resources */,
+				38463B771EF9100200130299 /* warm_智能设置未选中@2x.png in Resources */,
 				3843FA801EC40A8000435D75 /* i8_风速自动1@3x.png in Resources */,
 				3833DF571EC1B2F40099E9B4 /* p03_img_qp2_n_01@3x.png in Resources */,
 				3843FA781EC40A8000435D75 /* i8_风速中@2x.png in Resources */,
 				38943ED71EE931EE00CD6169 /* 2.png in Resources */,
+				38463B7F1EF9238100130299 /* 情景遥控解锁_控制@3x.png in Resources */,
 				3833DF5A1EC1B2F40099E9B4 /* background.png in Resources */,
 				3843FAFB1EC4397200435D75 /* i8_on关@3x.png in Resources */,
 				38943EC61EE931EE00CD6169 /* location_hardware.png in Resources */,
@@ -1010,6 +1100,8 @@
 				3833DF4E1EC1B2F40099E9B4 /* p03_icon_camera4_n_01@2x.png in Resources */,
 				38943EA01EE931EE00CD6169 /* ele_sunnyBird7.png in Resources */,
 				38371A651EC2F0C5005A6BE6 /* 联动_成员列表_女3@3x.png in Resources */,
+				38463B741EF9100200130299 /* 电量管家@3x.png in Resources */,
+				38463B721EF9100200130299 /* 遥控面板@2x.png in Resources */,
 				3833DF561EC1B2F40099E9B4 /* p03_img_qp2_n_01@2x.png in Resources */,
 				38943EB61EE931EE00CD6169 /* bg_fog.jpg in Resources */,
 				38943EF31EE931EE00CD6169 /* 99.png in Resources */,
@@ -1042,7 +1134,9 @@
 				3833DF3D1EC1B2F40099E9B4 /* BezierPathViewController.m in Sources */,
 				3833DF431EC1B2F40099E9B4 /* BasicViewController.m in Sources */,
 				3833DF5C1EC1B2F40099E9B4 /* MyTableViewCell.m in Sources */,
+				38463B5A1EF8B16F00130299 /* ElectricViewController.m in Sources */,
 				3833DF581EC1B2F40099E9B4 /* CCFoldCell.m in Sources */,
+				383B61B61EFA0359007148C1 /* GPPickerView.m in Sources */,
 				3833DF001EC1B2880099E9B4 /* ListTableViewCell.m in Sources */,
 				3833DF451EC1B2F40099E9B4 /* WaveProgressController.m in Sources */,
 				3833DEFF1EC1B2880099E9B4 /* AppDelegate.m in Sources */,
@@ -1056,7 +1150,9 @@
 				3833DF421EC1B2F40099E9B4 /* AViewController.m in Sources */,
 				3833DF3F1EC1B2F40099E9B4 /* ShockWaveController.m in Sources */,
 				38371A631EC2DFEC005A6BE6 /* QuartzView.m in Sources */,
+				38463B5D1EF8B17B00130299 /* SmartSettingViewController.m in Sources */,
 				38371A5D1EC2DF82005A6BE6 /* Quartz2DViewController.m in Sources */,
+				38463B631EF8FD2F00130299 /* Circle.m in Sources */,
 				384303B51EC1C7F400B2C9CD /* BlogDetailViewController.m in Sources */,
 				3833DEE21EC1B2600099E9B4 /* main.m in Sources */,
 			);

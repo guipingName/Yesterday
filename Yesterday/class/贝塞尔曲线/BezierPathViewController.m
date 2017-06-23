@@ -170,8 +170,11 @@
     
     
     // 封闭+填充色
+    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, HEIGHT - 150, WIDTH, 150)];
+    [self.view addSubview:bgView];
+    
     UIBezierPath *path1 = [UIBezierPath bezierPath];
-    [path1 moveToPoint:CGPointMake(0, HEIGHT - 80)];
+    [path1 moveToPoint:CGPointMake(0, 150 - 80)];
     
     CGFloat waveHeight1 = 15;
     CGFloat T1 = 50;
@@ -184,22 +187,30 @@
             T1 = 50;
             waveHeight1 = 15;
         }
-        CGFloat y = waveHeight1 * sin(M_PI * 2 / T1 * x + M_PI) + HEIGHT - 80;
+        CGFloat y = waveHeight1 * sin(M_PI * 2 / T1 * x + M_PI) + 150 - 80;
         [path1 addLineToPoint:CGPointMake(x, y)];
     }
     
-    [path1 addLineToPoint:CGPointMake(WIDTH, HEIGHT)];
-    [path1 addLineToPoint:CGPointMake(0, HEIGHT)];
+    [path1 addLineToPoint:CGPointMake(WIDTH, 150)];
+    [path1 addLineToPoint:CGPointMake(0, 150)];
     [path1 closePath];
     
     
     CAShapeLayer *layer1 =[CAShapeLayer layer];
     layer1.path=path1.CGPath;
-    //layer.frame = CGRectMake(0, 0, 100, 100);
-    [self.view.layer addSublayer:layer1];
-    layer1.fillColor = [UIColor orangeColor].CGColor;
+    layer.frame = bgView.bounds;
+    [bgView.layer addSublayer:layer1];
+    layer1.fillColor = [UIColor blueColor].CGColor;
     layer1.strokeColor=[UIColor redColor].CGColor;
     layer1.lineWidth = 2;
+    
+    CAGradientLayer *inGradLayer = [CAGradientLayer layer];
+    inGradLayer.frame = bgView.bounds;
+    inGradLayer.startPoint = CGPointZero;
+    inGradLayer.endPoint = CGPointMake(0, 1);
+    [bgView.layer addSublayer:inGradLayer];
+    inGradLayer.mask = layer1;
+    inGradLayer.colors = @[(__bridge id)[UIColor blueColor].CGColor,(__bridge id)[[UIColor blackColor] colorWithAlphaComponent:0.2].CGColor, (__bridge id)[UIColor orangeColor].CGColor];
 }
 
 #pragma mark --------------- 圆 ----------------

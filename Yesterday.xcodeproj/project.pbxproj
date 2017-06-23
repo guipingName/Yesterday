@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38322E761EFCF5D700ABFC73 /* YesterdayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38322E751EFCF5D700ABFC73 /* YesterdayUITests.m */; };
 		3833DEE21EC1B2600099E9B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3833DEE11EC1B2600099E9B4 /* main.m */; };
 		3833DEED1EC1B2600099E9B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3833DEEC1EC1B2600099E9B4 /* Assets.xcassets */; };
 		3833DEF01EC1B2600099E9B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3833DEEE1EC1B2600099E9B4 /* LaunchScreen.storyboard */; };
@@ -211,7 +212,20 @@
 		38943EF31EE931EE00CD6169 /* 99.png in Resources */ = {isa = PBXBuildFile; fileRef = 38943E991EE931EE00CD6169 /* 99.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		38322E781EFCF5D700ABFC73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3833DED51EC1B2600099E9B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3833DEDC1EC1B2600099E9B4;
+			remoteInfo = Yesterday;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		38322E731EFCF5D700ABFC73 /* YesterdayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YesterdayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38322E751EFCF5D700ABFC73 /* YesterdayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YesterdayUITests.m; sourceTree = "<group>"; };
+		38322E771EFCF5D700ABFC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3833DEDD1EC1B2600099E9B4 /* Yesterday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yesterday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3833DEE11EC1B2600099E9B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3833DEEC1EC1B2600099E9B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -450,6 +464,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		38322E701EFCF5D700ABFC73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3833DEDA1EC1B2600099E9B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -460,10 +481,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38322E741EFCF5D700ABFC73 /* YesterdayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				38322E751EFCF5D700ABFC73 /* YesterdayUITests.m */,
+				38322E771EFCF5D700ABFC73 /* Info.plist */,
+			);
+			path = YesterdayUITests;
+			sourceTree = "<group>";
+		};
 		3833DED41EC1B2600099E9B4 = {
 			isa = PBXGroup;
 			children = (
 				3833DEDF1EC1B2600099E9B4 /* Yesterday */,
+				38322E741EFCF5D700ABFC73 /* YesterdayUITests */,
 				3833DEDE1EC1B2600099E9B4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -472,6 +503,7 @@
 			isa = PBXGroup;
 			children = (
 				3833DEDD1EC1B2600099E9B4 /* Yesterday.app */,
+				38322E731EFCF5D700ABFC73 /* YesterdayUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -888,6 +920,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		38322E721EFCF5D700ABFC73 /* YesterdayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38322E7C1EFCF5D700ABFC73 /* Build configuration list for PBXNativeTarget "YesterdayUITests" */;
+			buildPhases = (
+				38322E6F1EFCF5D700ABFC73 /* Sources */,
+				38322E701EFCF5D700ABFC73 /* Frameworks */,
+				38322E711EFCF5D700ABFC73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38322E791EFCF5D700ABFC73 /* PBXTargetDependency */,
+			);
+			name = YesterdayUITests;
+			productName = YesterdayUITests;
+			productReference = 38322E731EFCF5D700ABFC73 /* YesterdayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		3833DEDC1EC1B2600099E9B4 /* Yesterday */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3833DEF41EC1B2600099E9B4 /* Build configuration list for PBXNativeTarget "Yesterday" */;
@@ -914,6 +964,11 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = pingui;
 				TargetAttributes = {
+					38322E721EFCF5D700ABFC73 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3833DEDC1EC1B2600099E9B4;
+					};
 					3833DEDC1EC1B2600099E9B4 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Manual;
@@ -934,11 +989,19 @@
 			projectRoot = "";
 			targets = (
 				3833DEDC1EC1B2600099E9B4 /* Yesterday */,
+				38322E721EFCF5D700ABFC73 /* YesterdayUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		38322E711EFCF5D700ABFC73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3833DEDB1EC1B2600099E9B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1120,6 +1183,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		38322E6F1EFCF5D700ABFC73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38322E761EFCF5D700ABFC73 /* YesterdayUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3833DED91EC1B2600099E9B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1160,6 +1231,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		38322E791EFCF5D700ABFC73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3833DEDC1EC1B2600099E9B4 /* Yesterday */;
+			targetProxy = 38322E781EFCF5D700ABFC73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		3833DEEE1EC1B2600099E9B4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -1172,6 +1251,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		38322E7A1EFCF5D700ABFC73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YesterdayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guipingmeName.YesterdayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Yesterday;
+			};
+			name = Debug;
+		};
+		38322E7B1EFCF5D700ABFC73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YesterdayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guipingmeName.YesterdayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Yesterday;
+			};
+			name = Release;
+		};
 		3833DEF21EC1B2600099E9B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1289,6 +1390,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		38322E7C1EFCF5D700ABFC73 /* Build configuration list for PBXNativeTarget "YesterdayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38322E7A1EFCF5D700ABFC73 /* Debug */,
+				38322E7B1EFCF5D700ABFC73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		3833DED81EC1B2600099E9B4 /* Build configuration list for PBXProject "Yesterday" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

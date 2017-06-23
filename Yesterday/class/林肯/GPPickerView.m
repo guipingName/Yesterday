@@ -65,7 +65,7 @@
     if (self.delegate && [self.delegate respondsToSelector:@selector(numbersOfRows)]) {
         return [self.delegate numbersOfRows];
     }
-    return 3;
+    return 0;
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{

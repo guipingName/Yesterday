@@ -187,7 +187,7 @@
             T1 = 50;
             waveHeight1 = 15;
         }
-        CGFloat y = waveHeight1 * sin(M_PI * 2 / T1 * x + M_PI) + 150 - 80;
+        CGFloat y = waveHeight1 * sin(M_PI * 2 / T1 * x + M_PI) + 30;
         [path1 addLineToPoint:CGPointMake(x, y)];
     }
     

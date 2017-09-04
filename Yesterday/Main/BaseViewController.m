@@ -25,6 +25,11 @@
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSLog(@"%@ Will Appear", [self class]);
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

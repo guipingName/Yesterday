@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		382A0C671F58F8BC00B0BF90 /* cellClickedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A0C661F58F8BC00B0BF90 /* cellClickedViewController.m */; };
+		382A0C6A1F58FEA600B0BF90 /* ChangeColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A0C691F58FEA600B0BF90 /* ChangeColorCell.m */; };
+		382A0C6D1F59016C00B0BF90 /* cellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 382A0C6C1F59016C00B0BF90 /* cellView.m */; };
 		38322E761EFCF5D700ABFC73 /* YesterdayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38322E751EFCF5D700ABFC73 /* YesterdayUITests.m */; };
 		3833DEE21EC1B2600099E9B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3833DEE11EC1B2600099E9B4 /* main.m */; };
 		3833DEED1EC1B2600099E9B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3833DEEC1EC1B2600099E9B4 /* Assets.xcassets */; };
@@ -117,6 +120,19 @@
 		38463B851EF9295800130299 /* i8_模式@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B821EF9295800130299 /* i8_模式@2x.png */; };
 		38463B861EF9295800130299 /* i8_模式@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B831EF9295800130299 /* i8_模式@3x.png */; };
 		38463B871EF9295800130299 /* i8_模式关@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38463B841EF9295800130299 /* i8_模式关@3x.png */; };
+		3874DDD21F4D8C9C00C92451 /* CityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874DDD11F4D8C9C00C92451 /* CityListViewController.m */; };
+		3874DDEF1F4D8DD000C92451 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3874DDD51F4D8DD000C92451 /* Info.plist */; };
+		3874DDF01F4D8DD000C92451 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874DDD71F4D8DD000C92451 /* MASCompositeConstraint.m */; };
+		3874DDF11F4D8DD000C92451 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874DDDA1F4D8DD000C92451 /* MASConstraint.m */; };
+		3874DDF21F4D8DD000C92451 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874DDDC1F4D8DD000C92451 /* MASConstraintMaker.m */; };
+		3874DDF31F4D8DD000C92451 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874DDDE1F4D8DD000C92451 /* MASLayoutConstraint.m */; };
+		3874DDF41F4D8DD000C92451 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874DDE21F4D8DD000C92451 /* MASViewAttribute.m */; };
+		3874DDF51F4D8DD000C92451 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874DDE41F4D8DD000C92451 /* MASViewConstraint.m */; };
+		3874DDF61F4D8DD000C92451 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874DDE61F4D8DD000C92451 /* NSArray+MASAdditions.m */; };
+		3874DDF71F4D8DD000C92451 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874DDE91F4D8DD000C92451 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		3874DDF81F4D8DD000C92451 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874DDEB1F4D8DD000C92451 /* View+MASAdditions.m */; };
+		3874DDF91F4D8DD000C92451 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874DDEE1F4D8DD000C92451 /* ViewController+MASAdditions.m */; };
+		3874DDFB1F4D8E9B00C92451 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3874DDFA1F4D8E9B00C92451 /* city.plist */; };
 		38943E321EE92DC900CD6169 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38943E311EE92DC900CD6169 /* WeatherViewController.m */; };
 		38943E351EE92E0000CD6169 /* WeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38943E341EE92E0000CD6169 /* WeatherView.m */; };
 		38943E381EE92ECD00CD6169 /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38943E371EE92ECD00CD6169 /* WeatherModel.m */; };
@@ -223,6 +239,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		382A0C651F58F8BC00B0BF90 /* cellClickedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellClickedViewController.h; sourceTree = "<group>"; };
+		382A0C661F58F8BC00B0BF90 /* cellClickedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellClickedViewController.m; sourceTree = "<group>"; };
+		382A0C681F58FEA600B0BF90 /* ChangeColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeColorCell.h; sourceTree = "<group>"; };
+		382A0C691F58FEA600B0BF90 /* ChangeColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeColorCell.m; sourceTree = "<group>"; };
+		382A0C6B1F59016C00B0BF90 /* cellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellView.h; sourceTree = "<group>"; };
+		382A0C6C1F59016C00B0BF90 /* cellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellView.m; sourceTree = "<group>"; };
 		38322E731EFCF5D700ABFC73 /* YesterdayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YesterdayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38322E751EFCF5D700ABFC73 /* YesterdayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YesterdayUITests.m; sourceTree = "<group>"; };
 		38322E771EFCF5D700ABFC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -365,6 +387,35 @@
 		38463B821EF9295800130299 /* i8_模式@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_模式@2x.png"; sourceTree = "<group>"; };
 		38463B831EF9295800130299 /* i8_模式@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_模式@3x.png"; sourceTree = "<group>"; };
 		38463B841EF9295800130299 /* i8_模式关@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i8_模式关@3x.png"; sourceTree = "<group>"; };
+		3874DDD01F4D8C9C00C92451 /* CityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListViewController.h; sourceTree = "<group>"; };
+		3874DDD11F4D8C9C00C92451 /* CityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListViewController.m; sourceTree = "<group>"; };
+		3874DDD51F4D8DD000C92451 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3874DDD61F4D8DD000C92451 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		3874DDD71F4D8DD000C92451 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		3874DDD81F4D8DD000C92451 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		3874DDD91F4D8DD000C92451 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		3874DDDA1F4D8DD000C92451 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		3874DDDB1F4D8DD000C92451 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		3874DDDC1F4D8DD000C92451 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		3874DDDD1F4D8DD000C92451 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		3874DDDE1F4D8DD000C92451 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		3874DDDF1F4D8DD000C92451 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		3874DDE01F4D8DD000C92451 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		3874DDE11F4D8DD000C92451 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		3874DDE21F4D8DD000C92451 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		3874DDE31F4D8DD000C92451 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		3874DDE41F4D8DD000C92451 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		3874DDE51F4D8DD000C92451 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		3874DDE61F4D8DD000C92451 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		3874DDE71F4D8DD000C92451 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		3874DDE81F4D8DD000C92451 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		3874DDE91F4D8DD000C92451 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		3874DDEA1F4D8DD000C92451 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		3874DDEB1F4D8DD000C92451 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		3874DDEC1F4D8DD000C92451 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		3874DDED1F4D8DD000C92451 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		3874DDEE1F4D8DD000C92451 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		3874DDFA1F4D8E9B00C92451 /* city.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = city.plist; sourceTree = "<group>"; };
 		38943E301EE92DC900CD6169 /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
 		38943E311EE92DC900CD6169 /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
 		38943E331EE92E0000CD6169 /* WeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherView.h; sourceTree = "<group>"; };
@@ -481,6 +532,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		382A0C641F58F87E00B0BF90 /* 单元格点击动画 */ = {
+			isa = PBXGroup;
+			children = (
+				382A0C651F58F8BC00B0BF90 /* cellClickedViewController.h */,
+				382A0C661F58F8BC00B0BF90 /* cellClickedViewController.m */,
+				382A0C6B1F59016C00B0BF90 /* cellView.h */,
+				382A0C6C1F59016C00B0BF90 /* cellView.m */,
+				382A0C681F58FEA600B0BF90 /* ChangeColorCell.h */,
+				382A0C691F58FEA600B0BF90 /* ChangeColorCell.m */,
+			);
+			path = "单元格点击动画";
+			sourceTree = "<group>";
+		};
 		38322E741EFCF5D700ABFC73 /* YesterdayUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -511,6 +575,7 @@
 		3833DEDF1EC1B2600099E9B4 /* Yesterday */ = {
 			isa = PBXGroup;
 			children = (
+				3874DDD31F4D8D9700C92451 /* 3rd */,
 				3833DEF81EC1B2880099E9B4 /* Main */,
 				3833DEF71EC1B2880099E9B4 /* class */,
 				3833DEEC1EC1B2600099E9B4 /* Assets.xcassets */,
@@ -532,6 +597,8 @@
 		3833DEF71EC1B2880099E9B4 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				382A0C641F58F87E00B0BF90 /* 单元格点击动画 */,
+				3874DDCF1F4D8C4800C92451 /* 城市列表 */,
 				38943E2F1EE92DB400CD6169 /* 天气 */,
 				3843FA021EC3FD2200435D75 /* 林肯 */,
 				38371A5A1EC2DF3D005A6BE6 /* Quartz2D */,
@@ -790,6 +857,57 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
+		3874DDCF1F4D8C4800C92451 /* 城市列表 */ = {
+			isa = PBXGroup;
+			children = (
+				3874DDFA1F4D8E9B00C92451 /* city.plist */,
+				3874DDD01F4D8C9C00C92451 /* CityListViewController.h */,
+				3874DDD11F4D8C9C00C92451 /* CityListViewController.m */,
+			);
+			path = "城市列表";
+			sourceTree = "<group>";
+		};
+		3874DDD31F4D8D9700C92451 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				3874DDD41F4D8DD000C92451 /* Masonry */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		3874DDD41F4D8DD000C92451 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				3874DDD51F4D8DD000C92451 /* Info.plist */,
+				3874DDD61F4D8DD000C92451 /* MASCompositeConstraint.h */,
+				3874DDD71F4D8DD000C92451 /* MASCompositeConstraint.m */,
+				3874DDD81F4D8DD000C92451 /* MASConstraint+Private.h */,
+				3874DDD91F4D8DD000C92451 /* MASConstraint.h */,
+				3874DDDA1F4D8DD000C92451 /* MASConstraint.m */,
+				3874DDDB1F4D8DD000C92451 /* MASConstraintMaker.h */,
+				3874DDDC1F4D8DD000C92451 /* MASConstraintMaker.m */,
+				3874DDDD1F4D8DD000C92451 /* MASLayoutConstraint.h */,
+				3874DDDE1F4D8DD000C92451 /* MASLayoutConstraint.m */,
+				3874DDDF1F4D8DD000C92451 /* Masonry.h */,
+				3874DDE01F4D8DD000C92451 /* MASUtilities.h */,
+				3874DDE11F4D8DD000C92451 /* MASViewAttribute.h */,
+				3874DDE21F4D8DD000C92451 /* MASViewAttribute.m */,
+				3874DDE31F4D8DD000C92451 /* MASViewConstraint.h */,
+				3874DDE41F4D8DD000C92451 /* MASViewConstraint.m */,
+				3874DDE51F4D8DD000C92451 /* NSArray+MASAdditions.h */,
+				3874DDE61F4D8DD000C92451 /* NSArray+MASAdditions.m */,
+				3874DDE71F4D8DD000C92451 /* NSArray+MASShorthandAdditions.h */,
+				3874DDE81F4D8DD000C92451 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				3874DDE91F4D8DD000C92451 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				3874DDEA1F4D8DD000C92451 /* View+MASAdditions.h */,
+				3874DDEB1F4D8DD000C92451 /* View+MASAdditions.m */,
+				3874DDEC1F4D8DD000C92451 /* View+MASShorthandAdditions.h */,
+				3874DDED1F4D8DD000C92451 /* ViewController+MASAdditions.h */,
+				3874DDEE1F4D8DD000C92451 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
 		38943E2F1EE92DB400CD6169 /* 天气 */ = {
 			isa = PBXGroup;
 			children = (
@@ -971,7 +1089,8 @@
 					};
 					3833DEDC1EC1B2600099E9B4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 3Q2MJ36ZMT;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1014,6 +1133,7 @@
 				38943EDE1EE931EE00CD6169 /* 25.png in Resources */,
 				38943EBB1EE931EE00CD6169 /* bg_night_rain.jpg in Resources */,
 				3833DF531EC1B2F40099E9B4 /* p03_icon_camera6_n_01@3x.png in Resources */,
+				3874DDEF1F4D8DD000C92451 /* Info.plist in Resources */,
 				38943ED11EE931EE00CD6169 /* 13.png in Resources */,
 				3843FAFA1EC4397200435D75 /* i8_on@3x.png in Resources */,
 				38943E9F1EE931EE00CD6169 /* ele_sunnyBird6.png in Resources */,
@@ -1112,6 +1232,7 @@
 				3843FA721EC40A8000435D75 /* i8_摆头@2x.png in Resources */,
 				38943ED51EE931EE00CD6169 /* 17.png in Resources */,
 				38943EEC1EE931EE00CD6169 /* 38.png in Resources */,
+				3874DDFB1F4D8E9B00C92451 /* city.plist in Resources */,
 				38943ECF1EE931EE00CD6169 /* 11.png in Resources */,
 				38943EE71EE931EE00CD6169 /* 33.png in Resources */,
 				3843FA6C1EC40A8000435D75 /* i8_定时@3x.png in Resources */,
@@ -1197,11 +1318,16 @@
 			files = (
 				38943E321EE92DC900CD6169 /* WeatherViewController.m in Sources */,
 				3833DF631EC1BC640099E9B4 /* BaseViewController.m in Sources */,
+				3874DDF61F4D8DD000C92451 /* NSArray+MASAdditions.m in Sources */,
+				382A0C6D1F59016C00B0BF90 /* cellView.m in Sources */,
+				3874DDF81F4D8DD000C92451 /* View+MASAdditions.m in Sources */,
 				3833DF3E1EC1B2F40099E9B4 /* PulsingHaloLayer.m in Sources */,
+				3874DDF51F4D8DD000C92451 /* MASViewConstraint.m in Sources */,
 				38943E381EE92ECD00CD6169 /* WeatherModel.m in Sources */,
 				3833DF411EC1B2F40099E9B4 /* CoreAnimationController.m in Sources */,
 				3833DF5E1EC1B2F40099E9B4 /* TableViewController.m in Sources */,
 				3833DF591EC1B2F40099E9B4 /* CCRotatedView.m in Sources */,
+				3874DDD21F4D8C9C00C92451 /* CityListViewController.m in Sources */,
 				3833DF3D1EC1B2F40099E9B4 /* BezierPathViewController.m in Sources */,
 				3833DF431EC1B2F40099E9B4 /* BasicViewController.m in Sources */,
 				3833DF5C1EC1B2F40099E9B4 /* MyTableViewCell.m in Sources */,
@@ -1210,21 +1336,30 @@
 				383B61B61EFA0359007148C1 /* GPPickerView.m in Sources */,
 				3833DF001EC1B2880099E9B4 /* ListTableViewCell.m in Sources */,
 				3833DF451EC1B2F40099E9B4 /* WaveProgressController.m in Sources */,
+				3874DDF41F4D8DD000C92451 /* MASViewAttribute.m in Sources */,
+				3874DDF31F4D8DD000C92451 /* MASLayoutConstraint.m in Sources */,
+				3874DDF01F4D8DD000C92451 /* MASCompositeConstraint.m in Sources */,
 				3833DEFF1EC1B2880099E9B4 /* AppDelegate.m in Sources */,
 				3843FA051EC3FD7500435D75 /* likonViewController.m in Sources */,
+				3874DDF71F4D8DD000C92451 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				3833DF011EC1B2880099E9B4 /* ViewController.m in Sources */,
 				3833DF5F1EC1B2F40099E9B4 /* UIView+Snapshot.m in Sources */,
+				3874DDF21F4D8DD000C92451 /* MASConstraintMaker.m in Sources */,
 				3833DF461EC1B2F40099E9B4 /* WaveProgressView.m in Sources */,
+				382A0C671F58F8BC00B0BF90 /* cellClickedViewController.m in Sources */,
 				3833DF671EC1C07D0099E9B4 /* BlogTableViewController.m in Sources */,
 				3833DF471EC1B2F40099E9B4 /* FrameViewController.m in Sources */,
 				38943E351EE92E0000CD6169 /* WeatherView.m in Sources */,
+				3874DDF91F4D8DD000C92451 /* ViewController+MASAdditions.m in Sources */,
 				3833DF421EC1B2F40099E9B4 /* AViewController.m in Sources */,
 				3833DF3F1EC1B2F40099E9B4 /* ShockWaveController.m in Sources */,
 				38371A631EC2DFEC005A6BE6 /* QuartzView.m in Sources */,
+				382A0C6A1F58FEA600B0BF90 /* ChangeColorCell.m in Sources */,
 				38463B5D1EF8B17B00130299 /* SmartSettingViewController.m in Sources */,
 				38371A5D1EC2DF82005A6BE6 /* Quartz2DViewController.m in Sources */,
 				38463B631EF8FD2F00130299 /* Circle.m in Sources */,
 				384303B51EC1C7F400B2C9CD /* BlogDetailViewController.m in Sources */,
+				3874DDF11F4D8DD000C92451 /* MASConstraint.m in Sources */,
 				3833DEE21EC1B2600099E9B4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1365,11 +1500,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3Q2MJ36ZMT;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Yesterday/Main/PrefixHeader.pch";
 				INFOPLIST_FILE = Yesterday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.guipingmeName.Yesterday;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guipingme.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1378,11 +1515,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3Q2MJ36ZMT;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Yesterday/Main/PrefixHeader.pch";
 				INFOPLIST_FILE = Yesterday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.guipingmeName.Yesterday;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guipingme.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1397,6 +1536,7 @@
 				38322E7B1EFCF5D700ABFC73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3833DED81EC1B2600099E9B4 /* Build configuration list for PBXProject "Yesterday" */ = {
 			isa = XCConfigurationList;

@@ -1,0 +1,144 @@
+//
+//  ChangeColorCell.m
+//  Yesterday
+//
+//  Created by guiping on 2017/9/1.
+//  Copyright © 2017年 pingui. All rights reserved.
+//
+
+#import "ChangeColorCell.h"
+
+@interface ChangeColorCell()
+{
+    UILabel *lbColorName;
+    UIView *normalView;
+    UIView *selectedView;
+    UIView *animationView;
+    CAGradientLayer *sideGradLayer;
+    CABasicAnimation *rotationAnimation;
+}
+@end
+
+@implementation ChangeColorCell
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        lbColorName = [[UILabel alloc] initWithFrame:CGRectMake(0, piy(56), pix(48), piy(12))];
+        lbColorName.textAlignment = NSTextAlignmentCenter;
+        lbColorName.textColor = [[UIColor blackColor] colorWithAlphaComponent:0.4];
+        lbColorName.font = [UIFont systemFontOfSize:12];
+        [self.contentView addSubview:lbColorName];
+        
+        UIView *cicleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetWidth(self.frame))];
+        [self.contentView addSubview:cicleView];
+        cicleView.layer.shadowOpacity = 0.2;
+        cicleView.layer.shadowOffset = CGSizeMake(4, 0);
+        cicleView.layer.shadowRadius = 4;
+        
+        normalView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, cicleView.bounds.size.width, cicleView.bounds.size.width)];
+        normalView.layer.cornerRadius = normalView.bounds.size.width/2;
+        normalView.layer.masksToBounds = YES;
+        [cicleView addSubview:normalView];
+        
+        UIView *normalInner = [[UIView alloc] initWithFrame:CGRectMake(0, 0, cicleView.bounds.size.width/3, cicleView.bounds.size.width/3)];
+        normalInner.center = CGPointMake(normalView.bounds.size.width / 2, normalView.bounds.size.height / 2);
+        [normalView addSubview:normalInner];
+        normalInner.backgroundColor = [UIColor whiteColor];
+        normalInner.layer.cornerRadius = normalInner.bounds.size.width/2;
+        normalInner.layer.shadowColor = [UIColor blackColor].CGColor;
+        normalInner.layer.shadowOffset = CGSizeMake(4, 0);
+        normalInner.layer.shadowOpacity = 0.2f;
+        normalInner.layer.shadowRadius = 4;
+        
+        selectedView = [[UIView alloc] initWithFrame:CGRectMake(3, 3, cicleView.bounds.size.width - 6, cicleView.bounds.size.width - 6)];
+        selectedView.layer.cornerRadius = selectedView.bounds.size.width/2;
+        selectedView.layer.masksToBounds = YES;
+        [cicleView addSubview:selectedView];
+        UIView *selectedInner = [[UIView alloc] initWithFrame:CGRectMake(0, 0, cicleView.bounds.size.width/6, cicleView.bounds.size.width/6)];
+        selectedInner.center = CGPointMake(selectedView.bounds.size.width / 2, selectedView.bounds.size.height / 2);
+        [selectedView addSubview:selectedInner];
+        selectedInner.backgroundColor = [UIColor whiteColor];
+        selectedInner.layer.cornerRadius = selectedInner.bounds.size.width/2;
+        selectedInner.layer.shadowColor = [UIColor blackColor].CGColor;
+        selectedInner.layer.shadowOffset = CGSizeMake(4, 0);
+        selectedInner.layer.shadowOpacity = 0.2f;
+        selectedInner.layer.shadowRadius = 4;
+        
+        // 添加动画
+        animationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, cicleView.bounds.size.width, cicleView.bounds.size.width)];
+        //animationView.hidden = YES;
+        animationView.backgroundColor = [UIColor clearColor];
+        [self addSubview:animationView];
+        
+        UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(animationView.bounds.size.width/2, animationView.bounds.size.width/2) radius:cicleView.bounds.size.width/2 - 1 startAngle:- M_PI / 2 endAngle:M_PI * 0.38 clockwise:NO];
+        CAShapeLayer *layer = [CAShapeLayer layer];
+        layer.path = path.CGPath;
+        layer.lineWidth = 1;
+        layer.fillColor = [UIColor clearColor].CGColor;
+        layer.strokeColor = [UIColor blueColor].CGColor;
+        [animationView.layer addSublayer:layer];
+        
+        sideGradLayer = [CAGradientLayer layer];
+        sideGradLayer.frame = animationView.bounds;
+        sideGradLayer.startPoint = CGPointZero;
+        sideGradLayer.endPoint = CGPointMake(0, 1);
+        [animationView.layer addSublayer:sideGradLayer];
+        sideGradLayer.mask = layer;
+    }
+    return self;
+}
+
+
+-(void)setColordata:(NSArray *)dataArray{
+    lbColorName.text = dataArray[2];
+    UIColor *color = [self colorFromHexString:dataArray[1]];
+    normalView.backgroundColor = color;
+    selectedView.backgroundColor = color;
+    if ([dataArray[0] integerValue]== 7) {
+        color = [UIColor redColor];
+    }
+    sideGradLayer.colors = @[(__bridge id)color.CGColor,(__bridge id)[color colorWithAlphaComponent:0.2].CGColor];
+}
+
+-(void)isShowAnimation:(BOOL)isSelected{
+    [animationView.layer removeAllAnimations];
+    rotationAnimation = nil;
+    if (isSelected) {
+        normalView.hidden = YES;
+        selectedView.hidden = NO;
+        animationView.hidden = NO;
+        [self startStroke];
+        lbColorName.textColor = [[UIColor blackColor] colorWithAlphaComponent:0.85];
+    }
+    else{
+        normalView.hidden = NO;
+        selectedView.hidden = YES;
+        animationView.hidden = YES;
+        lbColorName.textColor = [[UIColor blackColor] colorWithAlphaComponent:0.4];
+    }
+}
+
+-(void)startStroke{
+    rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.fromValue = @0;
+    rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 ];
+    rotationAnimation.duration = 4;
+    rotationAnimation.repeatCount = HUGE_VALF;
+    rotationAnimation.fillMode = kCAFillModeBoth;
+    [sideGradLayer addAnimation:rotationAnimation forKey:nil];
+}
+
+
+- (UIColor *)colorFromHexString:(NSString *)hexString
+{
+    unsigned rgbValue = 0;
+    hexString = [hexString stringByReplacingOccurrencesOfString:@"#" withString:@""];
+    NSScanner *scanner = [NSScanner scannerWithString:hexString];
+    [scanner scanHexInt:&rgbValue];
+    UIColor *color = [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0f green:((rgbValue & 0xFF00) >> 8)/255.0f blue:(rgbValue & 0xFF)/255.0f alpha:1.0];
+    return color;
+}
+
+@end
+

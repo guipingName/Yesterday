@@ -6,8 +6,8 @@
 //  Copyright © 2017年 pingui. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface FrameViewController : UIViewController
+@interface FrameViewController : BaseViewController
 
 @end

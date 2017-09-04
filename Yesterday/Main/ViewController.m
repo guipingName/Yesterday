@@ -129,6 +129,8 @@ static NSString *identifier = @"ListTableViewCell";
                   @"博客",
                   @"林肯控制界面",
                   @"天气动画",
+                  @"城市列表",
+                  @"单元格点击动画",
                   nil];
     
     describeArray = [NSArray arrayWithObjects:
@@ -143,6 +145,8 @@ static NSString *identifier = @"ListTableViewCell";
                      @"大牛们写的博客",
                      @"控制林肯设备",
                      @"风雨云雪动画效果",
+                     @"城市",
+                     @"点击的单元格旋转动画",
                      nil];
     
     classArray = [NSArray arrayWithObjects:
@@ -157,6 +161,8 @@ static NSString *identifier = @"ListTableViewCell";
                   @"BlogTableViewController",
                   @"likonViewController",
                   @"WeatherViewController",
+                  @"CityListViewController",
+                  @"cellClickedViewController",
                   nil];
     
     [self.myTableView reloadData];
@@ -170,6 +176,7 @@ static NSString *identifier = @"ListTableViewCell";
         _myTableView.delegate = self;
         _myTableView.tableFooterView = [[UIView alloc] init];
         [self.view addSubview:_myTableView];
+        _myTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_myTableView registerClass:[ListTableViewCell class] forCellReuseIdentifier:identifier];
     }
     return _myTableView;

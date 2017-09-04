@@ -6,8 +6,8 @@
 //  Copyright © 2016年 WXP. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface ShockWaveController : UIViewController
+@interface ShockWaveController : BaseViewController
 
 @end

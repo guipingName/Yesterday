@@ -29,7 +29,7 @@
         
         self.backgroundColor = [UIColor whiteColor];
         self.bounds = CGRectMake(0, 0, MIN(frame.size.width, frame.size.height), MIN(frame.size.width, frame.size.height));
-        self.layer.cornerRadius = MIN(frame.size.width, frame.size.height) * 0.5;
+//        self.layer.cornerRadius = MIN(frame.size.width, frame.size.height) * 0.5;
         self.layer.masksToBounds = YES;
         // 设置边框及颜色
         self.layer.borderColor = [UIColor colorWithRed:244/255.0 green:244/255.0 blue:248/255.0 alpha:1].CGColor;
@@ -100,7 +100,8 @@
     CGPathAddLineToPoint(pathRef, NULL, 0, startOffY);
     CGPathCloseSubpath(pathRef);
     self.firstWaveLayer.path = pathRef;
-    self.firstWaveLayer.fillColor = self.firstWaveColor.CGColor;
+    self.firstWaveLayer.fillColor = nil;
+    self.firstWaveLayer.strokeColor = self.firstWaveColor.CGColor;
     CGPathRelease(pathRef);
     
     //第二个波纹
@@ -120,8 +121,8 @@
         CGPathAddLineToPoint(pathRef1, NULL, 0, startOffY1);
         CGPathCloseSubpath(pathRef1);
         self.secondWaveLayer.path = pathRef1;
-        self.secondWaveLayer.fillColor = self.secondWaveColor.CGColor;
-        
+        self.secondWaveLayer.fillColor = nil;
+        self.secondWaveLayer.strokeColor = self.secondWaveColor.CGColor;
         CGPathRelease(pathRef1);
     }
     
@@ -132,7 +133,8 @@
     if (!_firstWaveLayer) {
         _firstWaveLayer = [CAShapeLayer layer];
         _firstWaveLayer.frame = self.bounds;
-        _firstWaveLayer.fillColor = _firstWaveColor.CGColor;
+        _firstWaveLayer.fillColor = nil;
+        _firstWaveLayer.strokeColor = _firstWaveColor.CGColor;
     }
     return _firstWaveLayer;
 }
@@ -141,7 +143,8 @@
     if (!_secondWaveLayer) {
         _secondWaveLayer = [CAShapeLayer layer];
         _secondWaveLayer.frame = self.bounds;
-        _secondWaveLayer.fillColor = _secondWaveColor.CGColor;
+        _secondWaveLayer.fillColor = nil;
+        _firstWaveLayer.strokeColor = _secondWaveColor.CGColor;
     }
     return _secondWaveLayer;
 }

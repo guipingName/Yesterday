@@ -44,6 +44,10 @@
     [i8Button2 tap];
     [i8Button2 tap];
     [i8Button2 tap];
+    [i8Button2 tap];
+    [i8Button2 tap];
+    [i8Button2 tap];
+    [i8Button2 tap];
     
 }
 

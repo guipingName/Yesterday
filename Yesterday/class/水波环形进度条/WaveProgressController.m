@@ -52,7 +52,7 @@
     WaveProgressView *progressView3 = [[WaveProgressView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
     progressView3.center=CGPointMake(CGRectGetMidX(self.view.bounds), 560);
     progressView3.progress = 0.3;
-    progressView3.waveHeight = 20;
+    progressView3.waveHeight = 50;
     progressView3.speed = 0.8;
     progressView3.firstWaveColor = [UIColor colorWithRed:92/255.0 green:255/255.0 blue:219/255.0 alpha:1];
     progressView3.secondWaveColor = [UIColor colorWithRed:105/255.0 green:122/255.0 blue:240/255.0 alpha:0.8];
